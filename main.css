@@ -7,7 +7,7 @@ body {
   margin: 0 20vw;
 }
 
-Title h1, Title h2 {
+.Title h1, .Title h2 {
   text-align: center;
 }
 
