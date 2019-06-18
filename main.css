@@ -11,7 +11,7 @@ body {
   text-align: center;
 }
 
-.TitlePic {
-  background-image: url("EEB2.png");
+.Title {
+  background: url("EEB2.png") no-repeat center;
   background-size: cover;
 }
