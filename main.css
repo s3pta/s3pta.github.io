@@ -12,6 +12,6 @@ body {
 }
 
 .TitlePic {
-  background: url("EEB2.png") no-repeat center;
+  background-image: url("EEB2.png");
   background-size: cover;
 }
