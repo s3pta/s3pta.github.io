@@ -33,7 +33,4 @@ body {
 
 .topnav {
   position: fixed;
-  width: 100vw;
-  height: 40px;
-  text-align: right;
 }
