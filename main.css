@@ -15,7 +15,7 @@ body {
   text-align: center;
 }
 
-.Title {
+.BannerImage {
   overflow: hidden;
   background: url("EEB2.png") no-repeat center;
   background-color: rgba(255, 255, 255, 0.5);
@@ -34,7 +34,7 @@ body {
   background-color: rgba(255, 255, 255, 0.5)
 }
 
-.Title .text {
+.Title {
   position: absolute;
   top: 50%;
   left: 50%;
