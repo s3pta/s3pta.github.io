@@ -9,4 +9,9 @@ body {
 
 h1 {
   text-align: center;
-  }
+}
+
+.TitlePic {
+  background: url('./EEB2.png') no-repeat center;
+  background-size: cover;
+}
