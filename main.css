@@ -24,7 +24,7 @@ body {
   position: relative;
 }
 
-.Title::before {
+.Banner::before {
   content: "";
   position: absolute;
   top: 0;
