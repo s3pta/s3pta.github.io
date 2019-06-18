@@ -39,3 +39,11 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.topnav {
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  font-size: 2rem;
+  text-align: right;
+}
