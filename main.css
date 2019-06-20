@@ -55,7 +55,7 @@ body {
 .topnav {
   position: fixed;
   width: 100vw;
-  height: 45px;
+  height: 43px;
   font-size: 2rem;
   text-align: right;
   z-index: 10;
@@ -79,7 +79,7 @@ body {
 
 .topnav .active {
   font-weight: bold;
-  border-bottom: 30px;
+  border-bottom: 30px solid #2674f2;
 }
 
 .scrolled {
