@@ -55,11 +55,12 @@ body {
 .topnav {
   position: fixed;
   width: 100vw;
-  height: 40px;
+  height: 45px;
   font-size: 2rem;
   text-align: right;
   z-index: 10;
   transition: 0.25s;
+  overflow: hidden;
 }
 
 .topnav a {
@@ -74,6 +75,11 @@ body {
 
 .topnav * {
   margin-right: 25px;
+}
+
+.topnav .active {
+  font-weight: bold;
+  border-bottom: 30px;
 }
 
 .scrolled {
