@@ -5,5 +5,10 @@ $(document).ready(() => {
     $('.BannerPicture').css({
       'transform': `translate(${scrollLeft / 2}px, ${scrollTop / 2}px)`
     })
+    if (scrollTop > 20) {
+      $('.topnav').addClass('scrolled')
+    } else {
+      $('.topnav').removeClass('scrolled')
+    }
   })
 })
