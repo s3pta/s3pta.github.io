@@ -10,10 +10,18 @@ body {
   .container {
     margin: 0 20vw;
   }
+  
+  .Title h1, .Title h2 {
+    text-align: right;
+  }
+  
+  .Title {
+    left: 70%;
+  }
 }
 
 .Title h1, .Title h2 {
-  text-align: right;
+  text-align: center;
 }
 
 .Title h1 {
@@ -49,7 +57,7 @@ body {
 .Title {
   position: absolute;
   top: 50%;
-  left: 70%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
