@@ -15,6 +15,14 @@ body {
   text-align: right;
 }
 
+.Title h1 {
+  font-size: 2rem;
+}
+
+.Title h2 {
+  font-size: 1.5rem;
+}
+
 .BannerPicture {
   background: url("EEB2.png") no-repeat center;
   background-color: rgba(255, 255, 255, 0.5);
