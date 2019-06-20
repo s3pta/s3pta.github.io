@@ -55,7 +55,7 @@ body {
 .topnav {
   position: fixed;
   width: 100vw;
-  height: 50px;
+  height: 40px;
   font-size: 2rem;
   text-align: right;
   z-index: 10;
