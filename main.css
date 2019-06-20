@@ -51,9 +51,12 @@ body {
   font-size: 2rem;
   text-align: right;
   z-index: 10;
-  background: white;
 }
 
 .topnav * {
   margin-right: 25px;
+}
+
+.scrolled {
+  background: rgba(0, 0, 0, 0.9
 }
