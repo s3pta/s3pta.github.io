@@ -59,6 +59,16 @@ body {
   font-size: 2rem;
   text-align: right;
   z-index: 10;
+  transition: 0.25s;
+}
+
+.topnav a {
+  color: black;
+  transition: 0.25s
+}
+
+.topnav a:hover {
+  color: #2674f2;
 }
 
 .topnav * {
@@ -67,4 +77,8 @@ body {
 
 .scrolled {
   background: rgba(0, 0, 0, 0.9);
+}
+
+.scrolled a {
+  color: white;
 }
