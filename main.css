@@ -12,7 +12,8 @@ body {
 }
 
 .Title h1, .Title h2 {
-  text-align: center;
+  text-align: right;
+  margin-right: 10vw;
 }
 
 .BannerPicture {
