@@ -6,9 +6,10 @@ body {
   font-family: calibri;
   font-size: 16px;
 }
-
-.container {
-  margin: 0 20vw;
+@media only screen and (min-width: 720px) {
+  .container {
+    margin: 0 20vw;
+  }
 }
 
 .Title h1, .Title h2 {
@@ -55,7 +56,7 @@ body {
 .topnav {
   position: fixed;
   width: 100vw;
-  height: 50px;
+  height: 47px;
   font-size: 2rem;
   text-align: right;
   z-index: 10;
