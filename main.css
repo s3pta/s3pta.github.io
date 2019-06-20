@@ -38,6 +38,7 @@ body {
   font-family: 'PT Sans';
   font-size: 21px;
 }
+
 @media only screen and (min-width: 720px) {
   .container {
     margin: 0 20vw;
@@ -56,11 +57,11 @@ body {
   text-align: center;
 }
 
-.Title h1 {
+h1 {
   font-size: 2em;
 }
 
-.Title h2 {
+h2 {
   font-size: 1.5em;
 }
 
