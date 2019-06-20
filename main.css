@@ -12,11 +12,11 @@ body {
   }
   
   .Title h1, .Title h2 {
-    text-align: right;
+    text-align: right !important;
   }
   
   .Title {
-    left: 70%;
+    left: 70% !important;
   }
 }
 
