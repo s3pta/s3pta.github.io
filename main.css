@@ -144,7 +144,7 @@ h2 {
 }
 
 .ok {
-  margin-top: 50px;
+  border-top: 50px;
   border-color: black;
 }
 
@@ -154,4 +154,7 @@ h2 {
 
 .main {
   text-align: left;
+  margin-left: 20px;
+  border-left: 20px;
+  padding-left: 20px;
 }
