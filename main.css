@@ -144,8 +144,7 @@ h2 {
 }
 
 .ok {
-  border-top: 50px;
-  border-top-color: black;
+   border: 1px solid #000000;
 }
 
 .pizza {
