@@ -163,7 +163,7 @@ table {
   width: 95%;
 }
 th, td {
-  border: 1px solid #000000;
+  background-color: #b8b8b8;
   font-size: 25px;
 }
 th {
