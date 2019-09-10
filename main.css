@@ -53,7 +53,6 @@ body {
   
   .Title h1, .Title h2 {
     text-align: right !important;
-    margin-right: 25px;
   }
   
   .Title {
@@ -62,6 +61,10 @@ body {
 
   .topnav {
     text-align: right !important;
+  }
+
+  .topnav * {
+    margin-right: 25px;
   }
 }
 
