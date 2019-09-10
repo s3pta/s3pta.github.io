@@ -33,6 +33,9 @@
 * {
   margin: 0;
   padding: 0;
+  max-width: 100vw;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 body {
@@ -59,12 +62,6 @@ body {
   .topnav {
     text-align: right !important;
   }
-}
-
-.container {
-  max-width: 100vw;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
 }
 
 .Title h1, .Title h2 {
@@ -113,7 +110,7 @@ h2 {
 
 .topnav {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 47px;
   font-size: 2rem;
   text-align: center;
