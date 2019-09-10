@@ -53,6 +53,7 @@ body {
   
   .Title h1, .Title h2 {
     text-align: right !important;
+    margin-right: 25px;
   }
   
   .Title {
@@ -64,9 +65,11 @@ body {
   }
 }
 
-.container {
-    margin: 0px 10px;
-    padding: 15px 0;
+@media only screen and (max-width: 719px) {
+  .container {
+      margin: 0px 10px;
+      padding: 15px;
+  }
 }
 
 .Title h1, .Title h2 {
@@ -135,7 +138,6 @@ h2 {
 }
 
 .topnav * {
-  margin-right: 25px;
   margin-top: 5px;
 }
 
@@ -162,9 +164,6 @@ h2 {
 
 .main {
   text-align: left;
-  margin-left: 20px;
-  border-left: 20px;
-  padding-left: 20px;
 }
 
 table {
