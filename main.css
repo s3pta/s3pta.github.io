@@ -62,10 +62,6 @@ body {
   .topnav {
     text-align: right !important;
   }
-
-  .topnav * {
-    margin-right: 25px;
-  }
 }
 
 @media only screen and (max-width: 719px) {
@@ -142,6 +138,7 @@ h2 {
 
 .topnav * {
   margin-top: 5px;
+  margin: 0 12.5;
 }
 
 .topnav .active {
