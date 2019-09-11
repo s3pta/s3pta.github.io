@@ -1,4 +1,17 @@
+let toggle = false
+const eventArray = []
 $(document).ready(() => {
+
+
+  new Event({
+      title: "Test",
+      allDay: true,
+      day: 12,
+      weekDay: "Thursday",
+      description: "Teste"
+  })
+
+
   $(window).on('scroll', () => {
     const scrollTop = $(this).scrollTop()
     const scrollLeft = $(this).scrollLeft()
@@ -14,4 +27,61 @@ $(document).ready(() => {
       $('.topnav').removeClass('scrolled')
     }
   })
+  
+  $( "td" ).on( "click", function() {
+    const popup = $(".popup")
+    if (!toggle) {
+      popup.addClass("open")
+      $(".dark").addClass("open")
+      const event = text($(this).text())
+      if (event) $("#title").text(event.title)
+      toggle = true
+    }
+    $(".dark").on("click", () => {
+      const popup = $(".popup")
+      if (toggle) {
+        popup.removeClass("open")
+        $(".dark").removeClass("open")
+        toggle = false
+      }
+    })
+  })
 })
+
+function text(text) {
+  for (let i = 0; i < eventArray.length; i++) {
+    if (eventArray[i].day == text) return eventArray[i]
+  }
+}
+
+class Event {
+  constructor(details) {
+    this.eventId = Math.floor(Math.random() * 1000) + 1
+    loopArray()
+    async function loopArray() {
+      for (let i = 0; i < eventArray.length; i++) {
+        if (eventArray[i].eventId === this.eventId) {
+          this.eventId = Math.floor(Math.random() * 1000) + 1
+          loopArray()
+          break
+        }
+      }
+    }
+    if (details.title) this.title = details.title
+    else throw new Error("A title is required!")
+    if (details.description) this.description = details.description
+    else throw new Error("A description is required!")
+    if (details.allDay) this.allDay = details.allDay
+    else {
+      if (details.beginTime) this.beginTime = details.beginTime
+      else throw new Error("No time specified")
+    }
+    if (details.endTime) this.endTime = details.endTime
+    if (details.day) this.day = details.day
+    if (details.weekDay) this.weekDay = details.weekDay
+    else throw new Error("No day specified")
+    this.color = details.color || "red"
+    eventArray.push(this)
+    console.log(eventArray)
+  }
+}
