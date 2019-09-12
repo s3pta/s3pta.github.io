@@ -35,6 +35,7 @@ $(document).ready(() => {
       $(".dark").addClass("open")
       const event = text($(this).text())
       if (event) $("#title").text(event.title)
+      else $("#title").text("Não há eventos para este dia")
       toggle = true
     }
     $(".dark").on("click", () => {
