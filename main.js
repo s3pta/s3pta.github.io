@@ -8,7 +8,7 @@ $(document).ready(() => {
       allDay: true,
       day: 12,
       weekDay: "Thursday",
-      description: "Teste"
+      description: "Neste dia, iremos tirar as fotografias da escola. Não se esqueçam de trazer roupa apropriada!"
   })
 
 
@@ -34,8 +34,14 @@ $(document).ready(() => {
       popup.addClass("open")
       $(".dark").addClass("open")
       const event = text($(this).text())
-      if (event) $("#title").text(event.title)
-      else $("#title").text("Não há eventos para este dia")
+      if (event) {
+        $("#title").text(event.title)
+        $("#event").text(event.description)
+      }
+      else {
+        $("#title").text("Não há eventos para este dia")
+        $("#event").text("")
+      }
       toggle = true
     }
     $(".dark").on("click", () => {
