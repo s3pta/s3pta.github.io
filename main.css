@@ -243,10 +243,12 @@ aside {
   border-radius: 20px;
   transition: 0.5s;
   overflow: hidden;
-  padding: 20px;
+  padding: 0px;
 }
 
 .popup.open {
   width: 70vw;
   height: 70vh;
-}
+  padding: 20px;
+} 
+
