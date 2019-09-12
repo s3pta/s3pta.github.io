@@ -198,7 +198,8 @@ h2 {
 
 table {
   font-size: 70%;
-  width: 100%;
+  min-width: 20cm;
+  margin: 0 auto;
   padding: 20px;
   border-radius: 20px;
   background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
