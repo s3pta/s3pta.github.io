@@ -4,7 +4,7 @@ $(document).ready(() => {
 
 
   new Event({
-      title: "Test",
+      title: "Fotos",
       allDay: true,
       day: 12,
       weekDay: "Thursday",
