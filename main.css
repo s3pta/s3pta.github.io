@@ -187,7 +187,7 @@ h2 {
 }
 
 .main {
-  text-align: justify;
+  text-align: left;
 }
 
 .table {
@@ -221,6 +221,16 @@ th, td {
 
 td:hover {
   background: rgba(0, 0, 0, .25);
+  cursor: pointer;
+}
+
+.red {
+  background: red;
+  transition: 250ms;
+}
+
+.red:hover {
+  background: rgb(200, 0, 0);
 }
 
 h3 {
@@ -243,12 +253,9 @@ aside {
   border-radius: 20px;
   transition: 0.5s;
   overflow: hidden;
-  padding: 0px;
 }
 
 .popup.open {
   width: 70vw;
   height: 70vh;
-  padding: 20px;
-} 
-
+}

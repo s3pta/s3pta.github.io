@@ -10,6 +10,22 @@ $(document).ready(() => {
       weekDay: "Thursday",
       description: "Neste dia, iremos tirar as fotografias da escola. Não se esqueçam de trazer roupa apropriada!"
   })
+  new Event({
+    title: "sla",
+    allDay: true,
+    day: 12,
+    weekDay: "Thursday",
+    description: "Neste dia, iremos tirar as fotografias da escola. Não se esqueçam de trazer roupa apropriada!"
+  })
+
+  $("td").each(function() {
+    const td = $(this)
+    eventArray.forEach(function (event) {
+      if (event.day == td.text()) {
+        td.addClass("red")
+      }
+    })
+  })
 
 
   $(window).on('scroll', () => {
@@ -87,7 +103,6 @@ class Event {
     if (details.day) this.day = details.day
     if (details.weekDay) this.weekDay = details.weekDay
     else throw new Error("No day specified")
-    this.color = details.color || "red"
     eventArray.push(this)
     console.log(eventArray)
   }
