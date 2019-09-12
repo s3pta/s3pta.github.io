@@ -5,17 +5,19 @@ $(document).ready(() => {
 
   new Event({
       title: "Fotos",
-      allDay: true,
+      beginTime: "17:00",
       day: 12,
       weekDay: "Thursday",
-      description: "Neste dia, iremos tirar as fotografias da escola. Não se esqueçam de trazer roupa apropriada!"
+      description: "Neste dia, iremos tirar as fotografias da escola. Não se esqueçam de trazer roupa apropriada!",
+      month: "setembro"
   })
   new Event({
     title: "sla",
     allDay: true,
     day: 12,
     weekDay: "Thursday",
-    description: "Neste dia, iremos tirar as fotografias da escola. Não se esqueçam de trazer roupa apropriada!"
+    description: "Neste dia, iremos tirar as fotografias da escola. Não se esqueçam de trazer roupa apropriada!",
+    month: "setembro"
   })
 
   $("td").each(function() {
@@ -49,15 +51,17 @@ $(document).ready(() => {
     if (!toggle) {
       popup.addClass("open")
       $(".dark").addClass("open")
+      popup.empty()
       const event = text($(this).text())
-      if (event) {
-        $("#title").text(event.title)
-        $("#event").text(event.description)
-      }
-      else {
-        $("#title").text("Não há eventos para este dia")
-        $("#event").text("")
-      }
+      if (event[0]) {
+        event.forEach(event => {
+          popup.append(`<h2 class="${event.eventId}">${event.title}</h2>`)
+          popup.append(`<h5 class="${event.eventId}">${event.allDay ? "Todo o dia" : event.endTime ? `${event.beginTime} - ${event.endTime}` : `A partir das ${event.beginTime}`}</h5>`)
+          popup.append(`<p class="${event.eventId}">${event.description}</p>`)
+        })
+      } else popup.append("<p>Não há eventos registados para este dia.</p>")
+      if ($(this).hasClass("nextmonth")) popup.prepend(`<h1>${$(this).text()} de ${$("nextmonth").attr("id").toLowerCase()}</h1>`)
+      else popup.prepend(`<h1>${$(this).text()} de ${$("#month").text().toLowerCase()}</h1>`)
       toggle = true
     }
     $(".dark").on("click", () => {
@@ -72,9 +76,11 @@ $(document).ready(() => {
 })
 
 function text(text) {
+  const returnArray = []
   for (let i = 0; i < eventArray.length; i++) {
-    if (eventArray[i].day == text) return eventArray[i]
+    if (eventArray[i].day == text) returnArray.push(eventArray[i])
   }
+  return returnArray
 }
 
 class Event {
@@ -103,6 +109,8 @@ class Event {
     if (details.day) this.day = details.day
     if (details.weekDay) this.weekDay = details.weekDay
     else throw new Error("No day specified")
+    if (details.month) this.month = details.month
+    else throw new Error("No month specified")
     eventArray.push(this)
     console.log(eventArray)
   }

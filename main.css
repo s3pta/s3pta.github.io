@@ -197,7 +197,7 @@ h2 {
 
 table {
   font-size: 70%;
-  width: 95%;
+  min-width: 95%;
   padding: 20px;
   border-radius: 20px;
   background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
@@ -253,9 +253,15 @@ aside {
   border-radius: 20px;
   transition: 0.5s;
   overflow: hidden;
+  padding: 0;
 }
 
 .popup.open {
   width: 70vw;
   height: 70vh;
+  padding: 20px;
+}
+
+td.nextmonth {
+  opacity: 0.5;
 }
