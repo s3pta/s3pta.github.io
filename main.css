@@ -302,5 +302,6 @@ td.nextmonth {
   border: 2px solid #2d2d2d;
   align-self: center;
   justify-content: center;
-  align-items: center
+  align-items: center;
+  width: 75%;
 }
