@@ -291,16 +291,16 @@ td.nextmonth {
 }
 
 .textos {
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;;
-    min-height: 50vh;
-    background-color: white;
-    background-size: cover;
-    border-radius: 5vh;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1vh;
-    position: relative;
-    border: 2px solid #2d2d2d;
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;;
+  min-height: 50vh;
+  background-color: white    background-size: cover;
+  border-radius: 5vh;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1vh;
+  position: relative;
+  border: 2px solid #2d2d2d;
+  align-self: center;
 }
