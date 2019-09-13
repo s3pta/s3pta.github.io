@@ -289,3 +289,7 @@ aside {
 td.nextmonth {
   opacity: 0.5;
 }
+
+.textos {
+  display: flex;
+  
