@@ -293,12 +293,12 @@ td.nextmonth {
 .textos {
   display: inline-flex;
   flex-direction: column;
-  flex-wrap: wrap;;
-  min-height: 50vh;
+  flex-wrap: wrap;
   background-color: white;  
   background-size: cover;
   border-radius: 5vh;
   margin-bottom: 1vh;
+  margin-left: 15vh;
   border: 2px solid #2d2d2d;
   align-self: center;
   justify-content: center;
