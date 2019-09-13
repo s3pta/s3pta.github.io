@@ -81,6 +81,34 @@ div.dark.open {
 
   .topnav {
     text-align: right !important;
+    position: fixed;
+    width: 100vw;
+    height: 47px;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 10;
+    transition: 0.25s;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    color: black;
+    transition: 0.25s;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    color: #2674f2;
+  }
+  
+  .topnav * {
+    margin-top: 5px;
+    margin: 0 25px;
+  }
+  
+  .topnav .active {
+    font-weight: bold;
+    border-bottom: 30px solid #2674f2;
   }
 }
 
@@ -88,6 +116,29 @@ div.dark.open {
   .container {
       margin: 0px 10px;
       padding: 15px;
+  }
+
+  .topnav a {
+    display: none;
+  }
+
+  .topnav {
+    text-align: right !important;
+    position: fixed;
+    width: 100vw;
+    height: 47px;
+    font-size: 2rem;
+    text-align: center;
+    z-index: 10;
+    transition: 0.25s;
+    overflow: hidden;
+  }
+
+  #navbutton {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
   }
 }
 
@@ -135,37 +186,6 @@ h2 {
   transform: translate(-50%, -50%);
 }
 
-.topnav {
-  position: fixed;
-  width: 100vw;
-  height: 47px;
-  font-size: 2rem;
-  text-align: center;
-  z-index: 10;
-  transition: 0.25s;
-  overflow: hidden;
-}
-
-.topnav a {
-  color: black;
-  transition: 0.25s;
-  text-decoration: none;
-}
-
-.topnav a:hover {
-  color: #2674f2;
-}
-
-.topnav * {
-  margin-top: 5px;
-  margin: 0 25px;
-}
-
-.topnav .active {
-  font-weight: bold;
-  border-bottom: 30px solid #2674f2;
-}
-
 .scrolled {
   background: rgba(0, 0, 0, 0.9);
 }
@@ -193,7 +213,7 @@ h2 {
 .table {
   overflow: auto;
   padding: 30px;
-  min-width: 95%;
+  min-width: 90%;
 }
 
 table {

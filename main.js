@@ -20,6 +20,15 @@ $(document).ready(() => {
     month: "setembro"
   })
 
+  new Event({
+    title: "Sexta feira 13",
+    allDay: true,
+    day: 13,
+    weekDay: "Friday",
+    description: "eeee",
+    month: "setembro"
+  })
+
   $("td").each(function() {
     const td = $(this)
     eventArray.forEach(function (event) {
@@ -78,7 +87,7 @@ $(document).ready(() => {
 function text(text) {
   const returnArray = []
   for (let i = 0; i < eventArray.length; i++) {
-    if (eventArray[i].day == text) returnArray.push(eventArray[i])
+    if (eventArray[i].day == text && $("#month").text().toLowerCase() === eventArray[i].month) returnArray.push(eventArray[i])
   }
   return returnArray
 }
