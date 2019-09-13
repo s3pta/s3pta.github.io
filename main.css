@@ -34,6 +34,27 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #dfdfdf;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -159,7 +180,7 @@ h2 {
   background: url("EEB2.png") no-repeat center;
   background-color: white;
   background-size: cover;
-  height: 77.5vh;
+  height: 90vh;
   position: relative;
 }
 
@@ -247,12 +268,12 @@ td:hover {
 }
 
 .red {
-  background: red;
+  background: #89a3ff;
   transition: 250ms;
 }
 
 .red:hover {
-  background: rgb(200, 0, 0);
+  background: #4e5d91;
 }
 
 h3 {
@@ -287,4 +308,20 @@ aside {
 
 td.nextmonth {
   opacity: 0.5;
+}
+
+.textos {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;  
+  background-size: cover;
+  border-radius: 5vh;
+  margin-bottom: 1vh;
+  margin-left: 15vh;
+  border: 2px solid #2d2d2d;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
 }
