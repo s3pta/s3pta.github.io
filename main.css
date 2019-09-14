@@ -112,13 +112,13 @@ body {
     font-size: 2rem;
     text-align: center;
     z-index: 10;
-    transition: 0.25s;
+    transition: background-color 0.25s;
     overflow: hidden;
   }
   
   .topnav * {
     color: black;
-    transition: 0.25s;
+    transition: color 0.25s;
     text-decoration: none;
   }
   
@@ -187,8 +187,12 @@ body {
     font-size: 2rem;
     text-align: center;
     z-index: 10;
-    transition: 0.25s;
+    transition: background-color 0.25s;
     overflow: hidden;
+  }
+
+  .topnav * {
+    transition: color 0.25s;
   }
 
   .topnav h3 {
