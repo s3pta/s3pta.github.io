@@ -1,4 +1,5 @@
 let toggle = false
+let toggle2 = false
 const eventArray = []
 $(document).ready(() => {
 
@@ -54,6 +55,37 @@ $(document).ready(() => {
       $('.topnav').removeClass('scrolled')
     }
   })
+
+
+
+
+  $("#navbutton").on("click", function() {
+    if (!toggle2) {
+      $("#sidenav").css("width", "250px")
+      $("#sidenav a").css("display", "block")
+      $(".dark2").addClass("open")
+      $(".topnav").addClass("scrolled2")
+      toggle2 = true
+    } else {
+      $("#sidenav").css("width", "0px")
+      $("#sidenav a").css("display", "none")
+      $(".dark2").removeClass("open")
+      $(".topnav").removeClass("scrolled2")
+      toggle2 = false
+    }
+  })
+
+
+  $(".dark2").on("click", function() {
+    if (toggle2) {
+      $("#sidenav").css("width", "0px")
+      $("#sidenav a").css("display", "none")
+      $(".dark2").removeClass("open")
+      $(".topnav").removeClass("scrolled2")
+      toggl2e = false
+    }
+  })
+
   
   $( "td" ).on( "click", function() {
     const popup = $(".popup")
