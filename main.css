@@ -116,7 +116,7 @@ body {
     overflow: hidden;
   }
   
-  .topnav a {
+  .topnav * {
     color: black;
     transition: 0.25s;
     text-decoration: none;
@@ -134,6 +134,12 @@ body {
   .topnav .active {
     font-weight: bold;
     border-bottom: 30px solid #2674f2;
+  }
+
+  .topnav h3 {
+    position: absolute;
+    left: 0;
+    display: inline;
   }
 
   #navbutton {
@@ -165,6 +171,13 @@ body {
     z-index: 10;
     transition: 0.25s;
     overflow: hidden;
+  }
+
+  .topnav h3 {
+    position: absolute !important;
+    top: 0;
+    right: 20px;
+    display: inline !important;
   }
 
   #navbutton {
@@ -281,7 +294,7 @@ h2 {
   background: rgba(0, 0, 0, 0.9);
 }
 
-.scrolled a {
+.scrolled a, .scrolled h3 {
   color: white;
 }
 
