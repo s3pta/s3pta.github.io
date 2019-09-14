@@ -294,7 +294,7 @@ h2 {
   background: rgba(0, 0, 0, 0.9);
 }
 
-.scrolled a, .scrolled h3 {
+.scrolled a, .scrolled h3, .scrolled2 h3 {
   color: white;
 }
 
