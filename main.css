@@ -151,7 +151,15 @@ body {
   }
   
   .dark2 {
-    display: none;
+    display: none !important;
+  }
+  
+  .scrolled2 {
+    background: none;
+  }
+  
+  .scrolled2 * {
+    color: white;
   }
   
 }
