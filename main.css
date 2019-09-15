@@ -250,6 +250,11 @@ body {
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .25);
   }
 
+  #sidenav * {
+    overflow-wrap: normal !important;
+    word-wrap: normal !important;
+  }
+
   #sidenav h2 {
     margin: 20px 10px;
   }
