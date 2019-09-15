@@ -82,7 +82,7 @@ $(document).ready(() => {
       $("#sidenav a").css("display", "none")
       $(".dark2").removeClass("open")
       $(".topnav").removeClass("scrolled2")
-      toggl2e = false
+      toggle2 = false
     }
   })
 
