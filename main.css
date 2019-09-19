@@ -316,3 +316,127 @@ h2 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.scrolled a, .scrolled h3 {
+  color: white;
+}
+
+.ok {
+  color: white;
+  border-radius: 20px;
+  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
+  padding: 15px 30px;
+  box-shadow: 10px 10px 20px #0000004d;
+}
+
+.pizza {
+  font-size: 18px;
+}
+
+.main {
+  text-align: left;
+}
+
+.shadow {
+  box-shadow: -10px -10px 20px rgba(0, 0, 0, .25);
+}
+
+.table {
+  overflow: auto;
+  padding: 30px;
+  min-width: 90%;
+}
+
+table {
+  font-size: 70%;
+  min-width: 20cm;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
+  color: white;
+  box-shadow: 10px 10px 20px #0000004d;
+}
+th, td {
+  background: none;
+  padding: 5px;
+  font-size: 25px;
+  transition: 250ms;
+}
+
+#weekdays {
+  font-weight: bold;
+}
+
+#weekdays td {
+  background: none !important;
+}
+
+td:hover {
+  background: rgba(0, 0, 0, .25);
+  cursor: pointer;
+}
+
+.red {
+  background: #89a3ff;
+  transition: 250ms;
+}
+
+.red:hover {
+  background: #4e5d91;
+}
+
+h3 {
+  text-align: center; 
+}
+
+aside {
+  align-self: right;
+}
+
+.popup {
+  width: 0;
+  height: 0;
+  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  transition: 0.5s;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 0;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .25);
+}
+
+.popup.open {
+  width: 70vw;
+  height: 70vh;
+  padding: 20px;
+}
+
+td.nextmonth {
+  opacity: 0.5;
+}
+
+.textos {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;  
+  background-size: cover;
+  border-radius: 5vh;
+  margin-bottom: 1vh;
+  margin-left: 15vh;
+  border: 2px solid #2d2d2d;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+}
