@@ -431,12 +431,14 @@ td.nextmonth {
   flex-wrap: wrap;
   background-color: white;  
   background-size: cover;
-  border-radius: 5vh;
+  border-radius: 1.5vh;
   margin-bottom: 1vh;
   margin-left: 15vh;
   border: 2px solid #2d2d2d;
   align-self: center;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 35%;
+  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .25);
 }
