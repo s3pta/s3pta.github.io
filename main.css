@@ -429,16 +429,22 @@ td.nextmonth {
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: white;  
-  background-size: cover;
-  border-radius: 1.5vh;
-  margin-bottom: 1vh;
-  margin-left: 15vh;
   border: 2px solid #2d2d2d;
   align-self: center;
   justify-content: center;
   align-items: center;
-  width: 35%;
+  width: 55%;
   background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
   box-shadow: 10px 10px 10px rgba(0, 0, 0, .25);
+  overflow: auto;
+  padding: 30px;
+  min-width: 90%;
+  font-size: 70%;
+  min-width: 20cm;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
+  color: white;
+  box-shadow: 10px 10px 20px #0000004d;
 }
