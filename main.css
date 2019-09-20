@@ -429,7 +429,7 @@ td.nextmonth {
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
-  border: 2px solid #2d2d2d;
+  margin: auto;
   align-self: center;
   justify-content: center;
   align-items: center;
@@ -439,7 +439,7 @@ td.nextmonth {
   overflow: auto;
   padding: 30px;
   min-width: 90%;
-  font-size: 70%;
+  font-size: 1.5rem;
   min-width: 20cm;
   margin: 0 auto;
   padding: 20px;
