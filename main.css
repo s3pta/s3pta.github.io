@@ -163,7 +163,7 @@ body {
   }
   
   .scrolled2 {
-    background: rgba(0, 0, 0, 0.9);
+    background:: linear-gradient(-135deg, #3b3bcb, #00a8ff);;
   }
   
   .scrolled2 h3 {
@@ -429,14 +429,22 @@ td.nextmonth {
   display: inline-flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: white;  
-  background-size: cover;
-  border-radius: 5vh;
-  margin-bottom: 1vh;
-  margin-left: 15vh;
-  border: 2px solid #2d2d2d;
+  margin: auto;
   align-self: center;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 55%;
+  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, .25);
+  overflow: auto;
+  padding: 30px;
+  min-width: 90%;
+  font-size: 1.5rem;
+  min-width: 20cm;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
+  color: white;
+  box-shadow: 10px 10px 20px #0000004d;
+  text-decoration: none;
 }
