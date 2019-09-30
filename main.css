@@ -163,7 +163,7 @@ body {
   }
   
   .scrolled2 {
-    background: linear-gradient(-135deg, #3b3bcb, #00a8ff);;
+    background: rgba(0, 0, 0, .9);
   }
   
   .scrolled2 h3 {
