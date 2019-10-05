@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-    <p id="countDown"></p>
+    <p id="countDown">CoundtDown</p>
 <script>
 var countDownDate = new Date("December 25, 2019 00:00:00").getTime();
 
@@ -60,13 +60,14 @@ var intervalBetween = setInterval(function() {
  var distance = CountDownDate - now;
  
  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
- var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
- var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
- var seconds = Math-floor((distance % (1000 * 60)) / 1000);
+ var hours = Math.floor(distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+ var minutes = Math.floor(distance % (1000 * 60 * 60) / (1000 * 60));
+ var seconds = Math-floor(distance % (1000 * 60) / 1000));
  
  document.getElementById("countDown").innerHTML = days + "dias" + hours + "horas" + minutes + "minutos" + seconds + "s";
  
- if (distance < 0) {  clearInterval(intervalBetween);
+ if (distance < 0) {  
+  clearInterval(intervalBetween);
   document.getElementById("countDown").innerHTML = "Evento expirou";
   }
  }, 1000);
