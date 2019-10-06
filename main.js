@@ -5,12 +5,12 @@ $(document).ready(() => {
 
 
   new Event({
-      title: "Fotos",
-      beginTime: "17:00",
-      day: 12,
+      title: "Teste de C.I",
+      beginTime: "09:20",
+      day: 10,
       weekDay: "Thursday",
-      description: "Neste dia, iremos tirar as fotografias da escola. Não se esqueçam de trazer roupa apropriada!",
-      month: "setembro"
+      description: "Neste dia teremos teste de Ciências Inegradas. Para estudar, poderão usar as fichas que o respetivo professor vos entregou, os apontamentos das aulas o manual, da página 11 à 49. Bom estudo!",
+      month: "outubro"
   })
   new Event({
     title: "sla",
