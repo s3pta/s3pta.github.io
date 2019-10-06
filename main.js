@@ -9,25 +9,8 @@ $(document).ready(() => {
       beginTime: "09:20",
       day: 10,
       weekDay: "Thursday",
-      description: "Neste dia teremos teste de Ciências Inegradas. Para estudar, poderão usar as fichas que o respetivo professor vos entregou, os apontamentos das aulas o manual, da página 11 à 49. Bom estudo!",
+      description: "Neste dia teremos teste de Ciências Integradas. Para estudar, poderão usar as fichas que o respetivo professor vos entregou, os apontamentos das aulas o manual, da página 11 à 49. Bom estudo!",
       month: "outubro"
-  })
-  new Event({
-    title: "sla",
-    allDay: true,
-    day: 12,
-    weekDay: "Thursday",
-    description: "Neste dia, iremos tirar as fotografias da escola. Não se esqueçam de trazer roupa apropriada!",
-    month: "setembro"
-  })
-
-  new Event({
-    title: "Sexta feira 13",
-    allDay: true,
-    day: 13,
-    weekDay: "Friday",
-    description: "eeee",
-    month: "setembro"
   })
 
   $("td").each(function() {
