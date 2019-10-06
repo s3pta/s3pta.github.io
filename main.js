@@ -9,7 +9,7 @@ $(document).ready(() => {
       beginTime: "09:20",
       day: 10,
       weekDay: "Thursday",
-      description: "Neste dia teremos teste de Ciências Integradas. Para estudar, poderão usar as fichas que o respetivo professor vos entregou, os apontamentos das aulas e o manual, da página 11 à 49. Bom estudo!",
+      description: "Neste dia teremos teste de Ciências Integradas. Para estudar, poderão usar as fichas que o respetivo professor vos entregou, as apresentação disponíveis no TEAMS, os apontamentos das aulas e o manual, da página 11 à 49. Bom estudo!",
       month: "outubro"
   })
 
