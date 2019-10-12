@@ -473,8 +473,8 @@ td.nextmonth {
   color: white;
   width: 35%;
   text-align: center;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
+  justify-content: left;
+  align-self: left;
+  align-items: left;
   margin: auto;
 }
