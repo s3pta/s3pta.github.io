@@ -456,7 +456,10 @@ td.nextmonth {
   border-radius: 20px;
   padding: 20px;
   color: white;
-  width: 55%;
+  width: 35%;
   text-align: center;
   justify-content: center;
+  align-self: center;
+  align-items: center;
+  margin: auto;
 }
