@@ -463,18 +463,3 @@ td.nextmonth {
   align-items: center;
   margin: auto;
 }
-
-.countdown2 {
-  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, .25);
-  box-shadow: 10px 10px 20px #0000004d;
-  border-radius: 20px;
-  padding: 20px;
-  color: white;
-  width: 35%;
-  text-align: center;
-  justify-content: left;
-  align-self: left;
-  align-items: left;
-  margin: auto;
-}
