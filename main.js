@@ -18,7 +18,7 @@ $(document).ready(() => {
     beginTime: "12:45",
     day: 17,
     weekDay: "Thursday",
-    description: "Neste dia iremos ter teste de Matemática. Toda a matéria necessária para estudar estão na ficha que a professora deu com toda a matéria. Bom estudo!",
+    description: "Neste dia iremos ter teste de Matemática. Toda a matéria necessária para estudar está na ficha que a professora deu com toda a matéria. Bom estudo!",
     month: "outubro",
   })
   $("td").each(function() {
