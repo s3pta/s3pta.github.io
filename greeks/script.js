@@ -1,4 +1,3 @@
-let toggle = false
 $(document).ready(() => {
     $(window).on("scroll", function() {
         const scroll = $(this).scrollTop();
@@ -8,23 +7,33 @@ $(document).ready(() => {
     })
     $(".hidden").on("click", function() {
         if ($(this).hasClass("hidden")) {
-            $(this).css("transform", "rotateY(180deg)")
-            setTimeout(() => {
-                $(this).find("p").css("transform", "scaleX(-1)")
-                $(this).find("img").css("transform", "scaleX(-1)")
-                $(this).removeClass("hidden")
-            }, 250)
-            toggle = true
+            if (!$(this).hasClass("done")) {
+                $(this).css("transform", "rotateY(180deg)")
+                setTimeout(() => {
+                    if (!$(this).hasClass("done")) {
+                        $(this).find("p").css("transform", "scaleX(-1)")
+                        $(this).find("img").css("transform", "scaleX(-1)")
+                        $(this).removeClass("hidden")
+                    }
+                }, 2000 / 30)
+                setTimeout(() => {
+                    $(this).addClass("done")
+                }, 15000 / 30)
+            }
         }
         else {
-            $(this).css("transform", "rotateX(0deg)")
-            setTimeout(() => {
-                $(this).find("p").css("transform", "scaleX(1)")
-                $(this).find(".question").css("transform", "scaleX(1) translate(-50%, -50%)")
-                $(this).find("img").css("transform", "scaleX(1)")
-                $(this).addClass("hidden")
-            }, 250)
-            toggle = false
+            if ($(this).hasClass("done")) {
+                $(this).css("transform", "rotateX(0deg)")
+                setTimeout(() => {
+                        $(this).find("p").css("transform", "scaleX(1)")
+                        $(this).find(".question").css("transform", "scaleX(1) translate(-50%, -50%)")
+                        $(this).find("img").css("transform", "scaleX(1)")
+                        $(this).addClass("hidden")
+                }, 1800 / 30)
+                setTimeout(() => {
+                    $(this).removeClass("done")
+                }, 15000 / 30)
+            }
         }
     })
 })
