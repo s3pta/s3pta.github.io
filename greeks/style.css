@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Nunito";
+    background: #b6d6f2;
+    min-height: 200vh;
+    font-size: 20px;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow-y: hidden;
+    font-size: 1.25em;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+}
+
+.background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(./images/greeks.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background::before {
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, .25)
+}
+
+main {
+    display: block;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 0 20px 5px rgba(0, 0, 0, .25);
+    border-top: 10px solid #256af5;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 833px) {
+
+    .flex-container div {
+        height: 400px;
+        overflow-y: auto;
+        width: 80% !important;
+        max-width: 417px !important;
+    }
+
+    .flex-container img {
+        position: static !important;
+        display: block;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .flex-container p {
+        position: static !important;
+        min-width: 100% !important;
+        margin: 5px 0 !important;
+        height: auto !important;
+    }
+
+    .hidden {
+        position: relative !important;
+        text-align: center !important;
+    }
+    
+    .hidden * {
+        display: none !important;
+        text-align: center !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 1000000px !important;
+        height: auto !important;
+    }
+    
+    .hidden .question {
+        display: block !important;
+        width: 100%;
+        height: 100%;
+        font-size: 275px;
+    }
+    
+    .question {
+        display: none !important;
+    }
+}
+
+.container {
+    margin: 0 20vw;
+}
+
+.flex-container div {
+    padding: 25px;
+    border-radius: 25px;
+    width: 45%;
+    height: 400px;
+    display: inline-block;
+    position: relative;
+    transition: 500ms ease-in-out;
+    z-index: 0;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .25);
+    background-position: 100% 100% !important;
+    cursor: pointer;
+    margin: 0px;
+    font-size: 1.035em;
+}
+
+.flex-container div.hidden:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, .25) !important;
+    background-position: 100% 100% !important;
+    cursor: pointer;
+    padding: 25px !important;
+    margin: 0px !important;
+    font-size: 1.035em !important;
+}
+
+.flex-container div.one {
+    background: linear-gradient(135deg, #ffdd00, #ff8000, #ffdd00);
+    background-size: 200% 200%;
+    color: white;
+}
+
+.flex-container div.two {
+    background: linear-gradient(135deg, #0767f7, #5a03fc, #0767f7);
+    background-size: 200% 200%;
+    color: white;
+}
+
+.flex-container div.three {
+    background: linear-gradient(135deg, #ff8000, #ff0000, #ff8000);
+    background-size: 200% 200%;
+    color: white;
+}
+
+.flex-container div.four {
+    background: linear-gradient(135deg, #00ff62, #009e0d, #00ff62);
+    background-size: 200% 200%;
+    color: white;
+}
+
+.flex-container div.five {
+    background: linear-gradient(135deg, #f542ec, #7700ff, #f542ec);
+    background-size: 200% 200%;
+    color: white;
+}
+
+.flex-container div.six {
+    background: linear-gradient(135deg, #00ccff, #0055ff, #00ccff);
+    background-size: 200% 200%;
+    color: white;
+}
+.flex-container div.hidden {
+    box-shadow: 0 0 10px rgba(0, 0, 0, .35) !important;
+    text-align: center !important;
+    background-position: 0 0 !important;
+    padding: 20px !important;
+    margin: 5px !important;
+    font-size: 1em !important;
+}
+
+.hidden * {
+    display: none !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 1000000px !important;
+    height: auto !important;
+}
+
+.hidden .question {
+    display: block !important;
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300%;
+}
+
+.question {
+    display: none !important;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    perspective: 7500px;
+}
+
+.flex-container div.right p {
+    overflow-y: auto;
+    text-align: justify;
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+    width: 47%;
+    height: 86.25%;
+}
+
+.flex-container div.left p {
+    overflow-y: auto;
+    text-align: justify;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    bottom: 20px;
+    width: 47%;
+    height: 86.25%;
+}
+
+.flex-container div img {
+    display: block;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 91%;
+    width: 42.5%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+
+.flex-container div.left img {
+    left: 20px;
+}
+
+.flex-container div.right img {
+    right: 20px;
+}
+
+.flex-container div.contain img {
+    object-fit: contain !important;
+    background-color: rgba(0, 0, 0, .25);
+}
