@@ -24,7 +24,7 @@ $(document).ready(() => {
   $("td").each(function() {
     const td = $(this)
     eventArray.forEach(function (event) {
-      if (event.day == td.text()) {
+      if (event.day == td.text() && event.month === $("#month").text().toLowerCase()) {
         td.addClass("red")
       }
     })
@@ -84,7 +84,7 @@ $(document).ready(() => {
       popup.addClass("open")
       $(".dark").addClass("open")
       popup.empty()
-      const event = text($(this).text())
+      const event = text($(this).text(), $(this).hasClass("lastmonth") ? $("lastmonth").attr("id") : ($(this).hasClass("nextmonth") ? $("nextmonth").attr("id") : $("#month").text().toLowerCase()))
       if (event[0]) {
         event.forEach(event => {
           popup.append(`<h2 class="${event.eventId}">${event.title}</h2>`)
@@ -108,10 +108,10 @@ $(document).ready(() => {
   })
 })
 
-function text(text) {
+function text(text, month) {
   const returnArray = []
   for (let i = 0; i < eventArray.length; i++) {
-    if (eventArray[i].day == text && $("#month").text().toLowerCase() === eventArray[i].month) returnArray.push(eventArray[i])
+    if (eventArray[i].day == text && month === eventArray[i].month) returnArray.push(eventArray[i])
   }
   return returnArray
 }
