@@ -7,7 +7,7 @@ $(document).ready(() => {
   new Event({
       title: "Teste de C.I",
       beginTime: "09:20",
-      day: 10,
+      day: 30,
       weekDay: "Thursday",
       description: "Neste dia teremos teste de Ciências Integradas. Para estudar, poderão usar as fichas que o respetivo professor vos entregou, as apresentação disponíveis no TEAMS, os apontamentos das aulas e o manual, da página 11 à 49. Bom estudo!",
       month: "outubro",
