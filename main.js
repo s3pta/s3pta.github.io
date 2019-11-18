@@ -130,6 +130,7 @@ class Event {
       return;
     }
     await loopArray()
+    this.eventId = id
     if (details.title) this.title = details.title
     else throw new Error("A title is required!")
     if (details.description) this.description = details.description
