@@ -119,8 +119,8 @@ function text(text, month) {
 class Event {
   constructor(details) {
     this.eventId = Math.floor(Math.random() * 1000) + 1
-    loopArray()
     function loopArray() {
+      if (!eventArray || eventArray.length == 0) return;
       for (let i = 0; i < eventArray.length; i++) {
         if (eventArray[i].eventId === this.eventId) {
           this.eventId = Math.floor(Math.random() * 1000) + 1
@@ -129,6 +129,7 @@ class Event {
         }
       }
     }
+    loopArray()
     if (details.title) this.title = details.title
     else throw new Error("A title is required!")
     if (details.description) this.description = details.description
