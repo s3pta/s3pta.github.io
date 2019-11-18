@@ -118,8 +118,8 @@ function text(text, month) {
 
 class Event {
   constructor(details) {
-    let id = await Math.floor(Math.random() * 1000) + 1
-    function loopArray() {
+    let id = Math.floor(Math.random() * 1000) + 1
+    async function loopArray() {
       if (!eventArray || eventArray.length == 0) return;
       for (let i = 0; i < eventArray.length; i++) {
         if (eventArray[i].eventId === id) {
@@ -129,8 +129,9 @@ class Event {
       }
       return;
     }
-    await loopArray()
-    this.eventId = id
+    loopArray().then(() => {
+      this.eventId = id
+    })
     if (details.title) this.title = details.title
     else throw new Error("A title is required!")
     if (details.description) this.description = details.description
