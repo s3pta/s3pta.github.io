@@ -93,7 +93,7 @@ $(document).ready(() => {
         })
       } else popup.append("<p>Não há eventos registados para este dia.</p>")
       if ($(this).hasClass("nextmonth")) popup.prepend(`<h1>${$(this).text()} de ${$("nextmonth").attr("id").toLowerCase()}</h1>`)
-      if ($(this).hasClass("lastmonth")) popup.prepend(`<h1>${$(this).text()} de ${$("lastmonth").attr("id").toLowerCase()}</h1>`)
+      else if ($(this).hasClass("lastmonth")) popup.prepend(`<h1>${$(this).text()} de ${$("lastmonth").attr("id").toLowerCase()}</h1>`)
       else popup.prepend(`<h1>${$(this).text()} de ${$("#month").text().toLowerCase()}</h1>`)
       toggle = true
     }
