@@ -120,7 +120,7 @@ class Event {
   constructor(details) {
     this.eventId = Math.floor(Math.random() * 1000) + 1
     loopArray()
-    async function loopArray() {
+    function loopArray() {
       for (let i = 0; i < eventArray.length; i++) {
         if (eventArray[i].eventId === this.eventId) {
           this.eventId = Math.floor(Math.random() * 1000) + 1
