@@ -118,18 +118,18 @@ function text(text, month) {
 
 class Event {
   constructor(details) {
-    this.eventId = Math.floor(Math.random() * 1000) + 1
+    let id = await Math.floor(Math.random() * 1000) + 1
     function loopArray() {
       if (!eventArray || eventArray.length == 0) return;
       for (let i = 0; i < eventArray.length; i++) {
-        if (eventArray[i].eventId === this.eventId) {
-          this.eventId = Math.floor(Math.random() * 1000) + 1
+        if (eventArray[i].eventId === id) {
+          id = await Math.floor(Math.random() * 1000) + 1
           loopArray()
-          break
+          break;
         }
       }
     }
-    loopArray()
+    await loopArray()
     if (details.title) this.title = details.title
     else throw new Error("A title is required!")
     if (details.description) this.description = details.description
