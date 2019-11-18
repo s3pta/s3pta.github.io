@@ -124,10 +124,10 @@ class Event {
       for (let i = 0; i < eventArray.length; i++) {
         if (eventArray[i].eventId === id) {
           id = await Math.floor(Math.random() * 1000) + 1
-          loopArray()
-          break;
+          return loopArray()
         }
       }
+      return;
     }
     await loopArray()
     if (details.title) this.title = details.title
