@@ -26,7 +26,7 @@ $(document).ready(() => {
   $("td").each(function() {
     const td = $(this)
     eventArray.forEach(function (event) {
-      if (event.day == td.text() && (td.hasClass("lastmonth") ? event.month === $("lastmonth").attr("id") : td.hasClass("nextmonth") ? event.month === $("nextmonth").attr("id") : event.month === $("#month").text().toLowerCase()) && event.year === $("#year").text()) {
+      if (event.day == td.text() && (td.hasClass("lastmonth") ? event.month === $("lastmonth").attr("id") : td.hasClass("nextmonth") ? event.month === $("nextmonth").attr("id") : event.month === $("#month").text().toLowerCase()) && event.year == $("#year").text()) {
         td.addClass("red")
       }
     })
@@ -113,7 +113,7 @@ $(document).ready(() => {
 function text(text, month) {
   const returnArray = []
   for (let i = 0; i < eventArray.length; i++) {
-    if (eventArray[i].day == text && month === eventArray[i].month && year === eventArray[i].year) returnArray.push(eventArray[i])
+    if (eventArray[i].day == text && month === eventArray[i].month && year == eventArray[i].year) returnArray.push(eventArray[i])
   }
   return returnArray
 }
