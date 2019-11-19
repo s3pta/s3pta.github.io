@@ -24,7 +24,7 @@ $(document).ready(() => {
   $("td").each(function() {
     const td = $(this)
     eventArray.forEach(function (event) {
-      if (event.day == td.text() && (event.month === $("#month").text().toLowerCase() || event.month === $("lastmonth").attr("id") || event.month === $("nextmonth").attr("id"))) {
+      if (event.day == td.text() && (td.hasClass("lastmonth") ? event.month === $("lastmonth").attr("id") : td.hasClass("nextmonth") ? event.month === $("nextmonth").attr("id") : event.month === $("#month").text().toLowerCase())) {
         td.addClass("red")
       }
     })
