@@ -11,6 +11,7 @@ $(document).ready(() => {
       weekDay: "Thursday",
       description: "Neste dia teremos teste de Ciências Integradas. Para estudar, poderão usar as fichas que o respetivo professor vos entregou, as apresentação disponíveis no TEAMS, os apontamentos das aulas e o manual, da página 11 à 49. Bom estudo!",
       month: "outubro",
+      year: 2019
   })
 
   new Event({
@@ -20,11 +21,12 @@ $(document).ready(() => {
     weekDay: "Thursday",
     description: "Neste dia iremos ter teste de Matemática. Toda a matéria necessária para estudar está na ficha que a professora deu com toda a matéria. Bom estudo!",
     month: "outubro",
+    year: 2019
   })
   $("td").each(function() {
     const td = $(this)
     eventArray.forEach(function (event) {
-      if (event.day == td.text() && (td.hasClass("lastmonth") ? event.month === $("lastmonth").attr("id") : td.hasClass("nextmonth") ? event.month === $("nextmonth").attr("id") : event.month === $("#month").text().toLowerCase())) {
+      if (event.day == td.text() && (td.hasClass("lastmonth") ? event.month === $("lastmonth").attr("id") : td.hasClass("nextmonth") ? event.month === $("nextmonth").attr("id") : event.month === $("#month").text().toLowerCase()) && event.year === $("#year").text()) {
         td.addClass("red")
       }
     })
@@ -84,7 +86,7 @@ $(document).ready(() => {
       popup.addClass("open")
       $(".dark").addClass("open")
       popup.empty()
-      const event = text($(this).text(), $(this).hasClass("lastmonth") ? $("lastmonth").attr("id") : ($(this).hasClass("nextmonth") ? $("nextmonth").attr("id") : $("#month").text().toLowerCase()))
+      const event = text($(this).text(), $(this).hasClass("lastmonth") ? $("lastmonth").attr("id") : ($(this).hasClass("nextmonth") ? $("nextmonth").attr("id") : $("#month").text().toLowerCase()), $("#year").text())
       if (event[0]) {
         event.forEach(event => {
           popup.append(`<h2 class="${event.eventId}">${event.title}</h2>`)
@@ -111,7 +113,7 @@ $(document).ready(() => {
 function text(text, month) {
   const returnArray = []
   for (let i = 0; i < eventArray.length; i++) {
-    if (eventArray[i].day == text && month === eventArray[i].month) returnArray.push(eventArray[i])
+    if (eventArray[i].day == text && month === eventArray[i].month && year === eventArray[i].year) returnArray.push(eventArray[i])
   }
   return returnArray
 }
@@ -147,6 +149,8 @@ class Event {
     else throw new Error("No day specified")
     if (details.month) this.month = details.month
     else throw new Error("No month specified")
+    if (details.year) this.year = details.year
+    else throw new Error("No year specified")
     eventArray.push(this)
     console.log(eventArray)
   }
