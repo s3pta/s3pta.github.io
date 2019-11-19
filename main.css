@@ -163,7 +163,8 @@ body {
   }
   
   .scrolled2 {
-    background: rgba(0, 0, 0, .9);
+    background: rgb(30, 30, 30);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   }
   
   .scrolled2 h3 {
@@ -318,7 +319,8 @@ h2 {
 }
 
 .scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(30, 30, 30);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
 .scrolled a, .scrolled h3 {
