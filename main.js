@@ -110,7 +110,7 @@ $(document).ready(() => {
   })
 })
 
-function text(text, month) {
+function text(text, month, year) {
   const returnArray = []
   for (let i = 0; i < eventArray.length; i++) {
     if (eventArray[i].day == text && month === eventArray[i].month && year == eventArray[i].year) returnArray.push(eventArray[i])
