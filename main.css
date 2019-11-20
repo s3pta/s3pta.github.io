@@ -481,5 +481,5 @@ td.nextmonth, td.lastmonth {
   background: linear-gradient(-135deg, rgb(30, 30, 30), rgb(70, 70, 70));
   padding: 15px 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .25);
-  margin-top: 5px;
+  margin-top: 10px;
 }
