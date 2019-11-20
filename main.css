@@ -474,3 +474,7 @@ td.nextmonth, td.lastmonth {
   box-shadow: 0 0 10px rgba(0, 0, 0, .25);
   margin-top: 10px;
 }
+
+.viewcounter {
+  padding: 15px 30px;
+}
