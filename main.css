@@ -124,7 +124,6 @@ body {
   
   .topnav a:hover {
     color: #2674f2;
-    position: relative;
   }
   
   .topnav * {
@@ -134,6 +133,7 @@ body {
   
   .topnav .active {
     font-weight: bold;
+    position: relative;
   }
   
   .topnav .active::before {
