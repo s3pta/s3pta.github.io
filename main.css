@@ -441,7 +441,6 @@ td.nextmonth, td.lastmonth {
   min-width: 20cm;
   padding: 20px;
   border-radius: 20px;
-  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
   color: white;
   box-shadow: 10px 10px 20px #0000004d;
   text-decoration: none;
