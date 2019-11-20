@@ -124,6 +124,7 @@ body {
   
   .topnav a:hover {
     color: #2674f2;
+    position: relative;
   }
   
   .topnav * {
