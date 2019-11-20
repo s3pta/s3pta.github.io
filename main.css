@@ -366,6 +366,7 @@ th, td {
   padding: 5px;
   font-size: 25px;
   transition: 250ms;
+  border-radius: 5px;
 }
 
 #weekdays {
