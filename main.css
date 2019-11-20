@@ -486,10 +486,3 @@ td.nextmonth, td.lastmonth {
   width: 20%;
   position: relative;
 }
-
-.login {
-  color: white;
-  background: linear-gradient(-135deg, rgb(30, 30, 30), rgb(70, 70, 70));
-  position: relative;
-}
-
