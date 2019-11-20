@@ -331,7 +331,7 @@ h2 {
 .ok {
   color: white;
   border-radius: 20px;
-  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
+  background: linear-gradient(-135deg, rgb(10, 10, 10), rgb(50, 50, 50));
   padding: 15px 30px;
   box-shadow: 0 0 20px rgba(0, 0, 0, .25);
 }
@@ -356,7 +356,7 @@ table {
   margin: 0 auto;
   padding: 20px;
   border-radius: 20px;
-  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
+  background: linear-gradient(-135deg, rgb(10, 10, 10), rgb(50, 50, 50));
   color: white;
   box-shadow: 0 0 20px rgba(0, 0, 0, .25);
 }
@@ -454,7 +454,7 @@ td.nextmonth, td.lastmonth {
 .countdown {
   color: white;
   border-radius: 20px;
-  background: linear-gradient(-135deg, #3b3bcb, #00a8ff);
+  background: linear-gradient(-135deg, rgb(10, 10, 10), rgb(50, 50, 50));
   padding: 15px 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .25);
   margin-top: 10px;
