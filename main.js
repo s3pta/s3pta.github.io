@@ -161,11 +161,11 @@ function check() {
   xhr.open("GET", "https://s3pta-api.glitch.me/check/" + $("#password").attr("value"))
   xhr.send()
   
-  xhr.onreadystatechange(() => {
+  xhr.onreadystatechange = () => {
     if (xhr.status == 200) {
       $(".password").css("display", "none")
       $(".page").css("display", "block")
     } else $(".password").prepend("wrong lol")
-  })
+  }
 }
 
