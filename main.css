@@ -594,7 +594,7 @@ span.psw {
 }
 
 .password input {
-  border-radius: 50%;
+  border-radius: 100px;
   width: 100%;
   height: 30px;
   margin: 10px;
@@ -606,8 +606,7 @@ span.psw {
   width: 50%;
   height: 30px;
   margin: 10px;
-  padding: 10px
-  
+  padding: 10px;
 }
 
 
