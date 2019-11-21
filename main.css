@@ -475,7 +475,7 @@ td.nextmonth, td.lastmonth {
   margin-top: 10px;
 }
 
-.viewcounter {
+/*.viewcounter {
   color: white;
   border-radius: 10px;
   background: linear-gradient(-135deg, rgb(30, 30, 30), rgb(70, 70, 70));
@@ -486,6 +486,7 @@ td.nextmonth, td.lastmonth {
   width: 20%;
   position: relative;
 }
+*/
 .modal {
       display: none; 
       position: fixed; 
@@ -591,3 +592,5 @@ td.nextmonth, td.lastmonth {
             width: 100%;
           }
         }
+
+       
