@@ -76,70 +76,15 @@ var x = setInterval(function() {
     clearInterval(x);
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
+  
+  $(document).on("ready" => {
+    console.log("test")
+  })
 }, 1000);
     </script>
     <div class="viewcounter">
-    <a href="https://www.freecounterstat.com" title="website counters"><img src="https://counter10.wheredoyoucomefrom.ovh/private/freecounterstat.php?
-    c=awtdtk222nuw7km5fkcurjzmj85ny6bf" border="0" title="website counters" alt="website counters"></a>
     </div>
     <div class="login">
-    <style>
-        form {
-          border: 3px solid #f1f1f1;
-        }
-        
-        input[type=text], input[type=password] {
-          width: 100%;
-          padding: 12px 20px;
-          margin: 8px 0;
-          display: inline-block;
-          border: 1px solid #ccc;
-          box-sizing: border-box;
-        }
-        
-        button {
-          background: linear-gradient(-135deg, rgb(30, 30, 30), rgb(70, 70, 70));
-          color: white;
-          padding: 14px 20px;
-          margin: 8px 0;
-          border: none;
-          cursor: pointer;
-          width: 35%;
-        }
-        
-        button:hover {
-          opacity: 0.8;
-        }
-        
-        .cancelbtn {
-          width: auto;
-          padding: 10px 18px;
-          background-color: #f44336;
-        }
-        
-         .imgcontainer {
-          text-align: center;
-          margin: 24px 0 12px 0;
-        }
-        .container {
-          padding: 16px;
-        }
-        
-        span.psw {
-          float: right;
-          padding-top: 16px;
-        }
-        
-        @media screen and (max-width: 300px) {
-          span.psw {
-            display: block;
-            float: none;
-          }
-          .cancelbtn {
-            width: 100%;
-          }
-        }
-</style>
 <button onclick="document.getElementById('id01').style.display='block'">Login</button>
 <div id="id01" class="modal">
   <span onclick="document.getElementById('id01').style.display='none'"
