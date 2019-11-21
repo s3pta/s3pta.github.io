@@ -2,7 +2,10 @@ let toggle = false
 let toggle2 = false
 const eventArray = []
 $(document).ready(() => {
-
+  if (sessionStorage.getItem("connected") === true) {
+    $(".password").css("display", "none")
+    $(".page").css("display", "block")
+  }
 
   new Event({
       title: "Teste de C.I",
@@ -165,6 +168,7 @@ function check() {
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200 && JSON.parse(xhr.responseText).correct) {
       $(".password").css("display", "none")
       $(".page").css("display", "block")
+      sessionStorage.setItem("connected", true)
     } else $("#wrong").text("Palavra passe errada.")
   }
 }
