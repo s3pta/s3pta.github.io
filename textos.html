@@ -9,45 +9,53 @@
     <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
   </head>
   <body>
-    <div class="dark"></div>
-    <div class="dark2"></div>
-    <div class="topnav">
-      <div id="navbutton">
-        <span id="stripes">
-          <span class="stripe"></span>
-          <span class="stripe"></span>
-          <span class="stripe"></span>
-        </span>
+    <div class="password">
+      <form id="password-form">
+        <input id="password" type="password" placeholder="Palavra Passe"></input>
+        <button onclick="check()">Validar</button>
+      </form>
+    </div>
+    <div class="page" style="display:none">
+      <div class="dark"></div>
+      <div class="dark2"></div>
+      <div class="topnav">
+        <div id="navbutton">
+          <span id="stripes">
+            <span class="stripe"></span>
+            <span class="stripe"></span>
+            <span class="stripe"></span>
+          </span>
+        </div>
+        <h3>S3PTA</h3>
+        <a href="./index">Início</a>
+        <a class="active" href="./textos">Textos</a>
+        <a href="./datas">Datas</a>
       </div>
-      <h3>S3PTA</h3>
-      <a href="./index">Início</a>
-      <a class="active" href="./textos">Textos</a>
-      <a href="./datas">Datas</a>
-    </div>
-    <div id="sidenav">
-      <h2>Menu</h2>
-      <a href="./index">Início</a>
-      <a class="active" href="./textos">Textos</a>
-      <a href="./datas">Datas</a>
-    </div>
-    <div class="Banner">
-      <div style = "height: 100vh" class="BannerPicture"></div>
-      <div class="Title">
-        <h1>S3PTA</h1>
-        <h2>Textos</h2>
+      <div id="sidenav">
+        <h2>Menu</h2>
+        <a href="./index">Início</a>
+        <a class="active" href="./textos">Textos</a>
+        <a href="./datas">Datas</a>
       </div>
-    </div>
-    <div class="shadow">
-      <div class="container">
-        <div class="main">
-          <p>Caros visitantes, nesta página estarão os trabalhos feitos nas aulas de português.</p>
-          <div class="textos">
-            <a href="textos/teste">Teste</a>
-            <br>
+      <div class="Banner">
+        <div style = "height: 100vh" class="BannerPicture"></div>
+        <div class="Title">
+          <h1>S3PTA</h1>
+          <h2>Textos</h2>
+        </div>
+      </div>
+      <div class="shadow">
+        <div class="container">
+          <div class="main">
+            <p>Caros visitantes, nesta página estarão os trabalhos feitos nas aulas de português.</p>
+            <div class="textos">
+              <a href="textos/teste">Teste</a>
+              <br>
+            </div>
           </div>
         </div>
       </div>
+      <script src="./main.js"></script>
     </div>
-    <script src="./main.js"></script>
   </body>
 </html>
