@@ -92,7 +92,7 @@ body {
 
 @media only screen and (min-width: 721px) {
   .container, .password {
-    padding: 0px 20vw;
+    margin: 0px 20vw;
     padding: 15px 0;
   }
   
@@ -188,7 +188,8 @@ body {
   }
   
   .container, .password {
-      padding: 0px 25px;
+      margin: 0px 10px;
+      padding: 15px 0;
   }
 
   .topnav a {
@@ -611,10 +612,6 @@ span.psw {
 
 .password {
   text-align: center;
-  height: 100vh;
-  background: url("EEB2.png") no-repeat center;
-  background-size: cover;
-  filter: blur(10px);
 }
 
 .password::before {
@@ -624,13 +621,19 @@ span.psw {
   left: 0;
   bottom: 0;
   right: 0;
-  background: rgba(255, 255, 255, .5);
-  filter: blur(10px);
+  background: url("EEB2.png") no-repeat center;
+  background-size: cover;
+  filter: blur(5px);
+  opacity: 0.5;
 }
 
 .password * {
   position: relative;
   z-index: 1;
+}
+
+input, button {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .25)
 }
 
        
