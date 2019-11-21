@@ -162,7 +162,7 @@ function check() {
   xhr.send()
   
   xhr.onreadystatechange = () => {
-    if (xhr.status == 200) {
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200 && JSON.parse(xhr.responseText).correct) {
       $(".password").css("display", "none")
       $(".page").css("display", "block")
     } else $(".password").prepend("wrong lol")
