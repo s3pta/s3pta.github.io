@@ -614,6 +614,7 @@ span.psw {
   height: 100vh;
   background: url("EEB2.png") no-repeat center;
   background-size: cover;
+  filter: blur(10px);
 }
 
 .password::before {
@@ -624,8 +625,12 @@ span.psw {
   bottom: 0;
   right: 0;
   background: rgba(255, 255, 255, .5);
-  filter: blur(5px);
+  filter: blur(10px);
 }
 
+.password * {
+  position: relative;
+  z-index: 1;
+}
 
        
