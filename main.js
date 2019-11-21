@@ -2,7 +2,7 @@ let toggle = false
 let toggle2 = false
 const eventArray = []
 $(document).ready(() => {
-  if (sessionStorage.getItem("connected") === true) {
+  if (sessionStorage.getItem("connected") === "true") {
     $(".password").css("display", "none")
     $(".page").css("display", "block")
   }
