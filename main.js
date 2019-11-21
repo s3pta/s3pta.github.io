@@ -162,7 +162,7 @@ class Event {
 function check() {
   const xhr = new XMLHttpRequest()
   xhr.open("GET", "https://s3pta-api.glitch.me/check/" + $("#password").val())
-  xhr.send()
+  xhr.send(JSON.stringify({url: window.location.href}))
   
   xhr.onreadystatechange = () => {
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200 && JSON.parse(xhr.responseText).correct) {
