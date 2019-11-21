@@ -9,106 +9,114 @@
         <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
     </head>
     <body>
-        <div class="dark"></div>
-        <div class="dark2"></div>
-        <div class="topnav">
-            <div id="navbutton">
-                <span id="stripes">
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                </span>
+        <div class="password">
+            <form id="password-form">
+                <input id="password" type="password" placeholder="Palavra Passe"></input>
+                <button onclick="check()">Validar</button>
+            </form>
+        </div>
+        <div class="page" style="display:none">
+            <div class="dark"></div>
+            <div class="dark2"></div>
+            <div class="topnav">
+                <div id="navbutton">
+                    <span id="stripes">
+                        <span class="stripe"></span>
+                        <span class="stripe"></span>
+                        <span class="stripe"></span>
+                    </span>
+                </div>
+                <h3>S3PTA</h3>
+                <a href="./index">Início</a>
+                <a href="./textos">Textos</a>
+                <a class="active" href="./datas">Datas</a>
             </div>
-            <h3>S3PTA</h3>
-            <a href="./index">Início</a>
-            <a href="./textos">Textos</a>
-            <a class="active" href="./datas">Datas</a>
-        </div>
-        <div id="sidenav">
-            <h2>Menu</h2>
-            <a href="./index">Início</a>
-            <a href="./textos">Textos</a>
-            <a class="active" href="./datas">Datas</a>
-        </div>
-        <div class="Banner">
-            <div class="BannerPicture"></div>
-            <div class="Title">
-                <h1>S3PTA</h1>
-                <h2>Datas</h2>
+            <div id="sidenav">
+                <h2>Menu</h2>
+                <a href="./index">Início</a>
+                <a href="./textos">Textos</a>
+                <a class="active" href="./datas">Datas</a>
             </div>
-        </div>
-        <div class="shadow">
-            <div class="container">
-                <div class="main">
-                    <p>Nesta página estão as datas e respetiva informação sobre eventos importantes como testes, trabalhos de grupo, 
-                    visitas de estudo, ou outros eventos escolares.</p>
-                    <h2 id="year" style="text-align: center; margin: auto">2019</h2>
-                    <h3 id="month">Novembro</h3>
-                    <div class="table">
-                        <table>
-                            <tr id="weekdays">
-                                <th>Domingo</th>
-                                <th>2ª feira</th>
-                                <th>3ª feira</th>
-                                <th>4ª feira</th>
-                                <th>5ª feira</th>
-                                <th>6ª feira</th>
-                                <th>Sábado</th>
-                            </tr>
-                            <tr>
-                                <td class="lastmonth">27</td>
-                                <td class="lastmonth">28</td>
-                                <td class="lastmonth">29</td>
-                                <td class="lastmonth">30</td>
-                                <td class="lastmonth">31</td>
-                                <td>01</td>
-                                <td>02</td>
-                            </tr>
-                            <tr>
-                                <td>03</td>
-                                <td>04</td>
-                                <td>05</td>
-                                <td>06</td>
-                                <td>7</td>
-                                <td>8</td>
-                                <td>9</td> 
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>11</td>
-                                <td>12</td>
-                                <td>13</td>
-                                <td>14</td>
-                                <td>15</td>
-                                <td>16</td>
-                            </tr>
-                            <tr>
-                                <td>17</td>
-                                <td>18</td>
-                                <td>19</td>
-                                <td>20</td>
-                                <td>21</td>
-                                <td>22</td>
-                                <td>23</td>
-                            </tr>
-                            <tr>
-                                <td>24</td>
-                                <td>25</td>
-                                <td>26</td>
-                                <td>27</td>
-                                <td>28</td>
-                                <td>29</td>
-                                <td>30</td>
-                                <nextmonth id="dezembro"></nextmonth>
-                                <lastmonth id="outubro"></lastmonth>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="popup">
+            <div class="Banner">
+                <div class="BannerPicture"></div>
+                <div class="Title">
+                    <h1>S3PTA</h1>
+                    <h2>Datas</h2>
+                </div>
+            </div>
+            <div class="shadow">
+                <div class="container">
+                    <div class="main">
+                        <p>Nesta página estão as datas e respetiva informação sobre eventos importantes como testes, trabalhos de grupo, 
+                        visitas de estudo, ou outros eventos escolares.</p>
+                        <h2 id="year" style="text-align: center; margin: auto">2019</h2>
+                        <h3 id="month">Novembro</h3>
+                        <div class="table">
+                            <table>
+                                <tr id="weekdays">
+                                    <th>Domingo</th>
+                                    <th>2ª feira</th>
+                                    <th>3ª feira</th>
+                                    <th>4ª feira</th>
+                                    <th>5ª feira</th>
+                                    <th>6ª feira</th>
+                                    <th>Sábado</th>
+                                </tr>
+                                <tr>
+                                    <td class="lastmonth">27</td>
+                                    <td class="lastmonth">28</td>
+                                    <td class="lastmonth">29</td>
+                                    <td class="lastmonth">30</td>
+                                    <td class="lastmonth">31</td>
+                                    <td>01</td>
+                                    <td>02</td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>04</td>
+                                    <td>05</td>
+                                    <td>06</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                                    <td>9</td> 
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                                </tr>
+                                <tr>
+                                    <td>17</td>
+                                    <td>18</td>
+                                    <td>19</td>
+                                    <td>20</td>
+                                    <td>21</td>
+                                    <td>22</td>
+                                    <td>23</td>
+                                </tr>
+                                <tr>
+                                    <td>24</td>
+                                    <td>25</td>
+                                    <td>26</td>
+                                    <td>27</td>
+                                    <td>28</td>
+                                    <td>29</td>
+                                    <td>30</td>
+                                    <nextmonth id="dezembro"></nextmonth>
+                                    <lastmonth id="outubro"></lastmonth>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="popup">
+                        </div>
                     </div>
                 </div>
             </div>
+            <script src="./main.js"></script>
         </div>
-        <script src="./main.js"></script>
     </body>
 </html>
