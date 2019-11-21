@@ -169,3 +169,7 @@ function check() {
   }
 }
 
+$(".password form").submit(function(e) {
+  e.preventDefault();
+  check()
+});
