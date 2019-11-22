@@ -2,7 +2,6 @@
 
 if (!eventArray) var eventArray = []
 $(document).ready(() => {
-  import Event from "./event"
   if (sessionStorage.getItem("connected") === "true") {
     $(".password").css("display", "none")
     $(".page").css("display", "block")
