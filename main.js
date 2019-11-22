@@ -116,7 +116,7 @@ function text(text, month, year) {
   return returnArray
 }
 
-if (!Ev) {
+if (!Event) {
   class Ev {
     constructor(details) {
       let id = Math.floor(Math.random() * 1000) + 1
