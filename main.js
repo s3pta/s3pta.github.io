@@ -1,5 +1,3 @@
-let toggle = false
-let toggle2 = false
 const eventArray = []
 $(document).ready(() => {
   if (sessionStorage.getItem("connected") === "true") {
@@ -58,36 +56,33 @@ $(document).ready(() => {
 
 
   $("#navbutton").on("click", function() {
-    if (!toggle2) {
+    if (!$(".dark2").hasClass("open")) {
       $("#sidenav").css("width", "250px")
       $("#sidenav a").css("display", "block")
       $(".dark2").addClass("open")
       $(".topnav").addClass("scrolled2")
-      toggle2 = true
     } else {
       $("#sidenav").css("width", "0px")
       $("#sidenav a").css("display", "none")
       $(".dark2").removeClass("open")
       $(".topnav").removeClass("scrolled2")
-      toggle2 = false
     }
   })
 
 
   $(".dark2").on("click", function() {
-    if (toggle2) {
+    if (!$(".dark2").hasClass("open")) {
       $("#sidenav").css("width", "0px")
       $("#sidenav a").css("display", "none")
       $(".dark2").removeClass("open")
       $(".topnav").removeClass("scrolled2")
-      toggle2 = false
     }
   })
 
   
   $( "td" ).on( "click", function() {
     const popup = $(".popup")
-    if (!toggle) {
+    if (!popup.hasClass("open")) {
       popup.addClass("open")
       $(".dark").addClass("open")
       popup.empty()
@@ -102,14 +97,12 @@ $(document).ready(() => {
       if ($(this).hasClass("nextmonth")) popup.prepend(`<h1>${$(this).text()} de ${$("nextmonth").attr("id").toLowerCase()}</h1>`)
       else if ($(this).hasClass("lastmonth")) popup.prepend(`<h1>${$(this).text()} de ${$("lastmonth").attr("id").toLowerCase()}</h1>`)
       else popup.prepend(`<h1>${$(this).text()} de ${$("#month").text().toLowerCase()}</h1>`)
-      toggle = true
     }
     $(".dark").on("click", () => {
       const popup = $(".popup")
-      if (toggle) {
+      if (popup.hasClass("open")) {
         popup.removeClass("open")
         $(".dark").removeClass("open")
-        toggle = false
       }
     })
   })
