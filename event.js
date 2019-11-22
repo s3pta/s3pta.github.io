@@ -36,4 +36,6 @@ class Event {
   }
 }
 
-module.exports = Event
+$(document).ready(() => {
+  module.exports = Event
+})
