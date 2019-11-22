@@ -116,10 +116,8 @@ function text(text, month, year) {
   return returnArray
 }
 
-if (!Event) {
-  var Event = Ev;
-
-  if (!Ev) class Ev {
+if (!Ev) {
+  class Ev {
     constructor(details) {
       let id = Math.floor(Math.random() * 1000) + 1
       async function loopArray() {
@@ -156,6 +154,7 @@ if (!Event) {
       console.log(eventArray)
     }
   }
+  var Event = Ev;
 }
 
 if (!check) var check = function() {
