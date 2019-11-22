@@ -36,4 +36,4 @@ class Event {
   }
 }
 
-export {Event}
+module.exports = Event
