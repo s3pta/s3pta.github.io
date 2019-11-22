@@ -1,3 +1,5 @@
+import Event from "./event"
+
 if (!eventArray) var eventArray = []
 $(document).ready(() => {
   if (sessionStorage.getItem("connected") === "true") {
