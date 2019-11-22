@@ -1,4 +1,4 @@
-const eventArray = []
+if (!eventArray) var eventArray = []
 $(document).ready(() => {
   if (sessionStorage.getItem("connected") === "true") {
     $(".password").css("display", "none")
