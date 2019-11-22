@@ -1,5 +1,5 @@
 
-
+if (!Event) var Event = require("./events.js")
 if (!eventArray) var eventArray = []
 $(document).ready(() => {
 
