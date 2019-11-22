@@ -7,6 +7,7 @@ $(document).ready(() => {
     $(".page").css("display", "block")
   } else {
     $(".page").html("<div></div>")
+    eventArray = []
   }
 
   new Event({
