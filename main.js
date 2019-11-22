@@ -168,7 +168,8 @@ function check() {
   
   xhr.onreadystatechange = () => {
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-      if (xhr.getResponseHeader("Content-Type") === "application/html") {
+      console.log(xhr.getResponseHeader("Content-Type"))
+      if (xhr.getResponseHeader("Content-Type") === "text/html") {
         $(".password").css("display", "none")
         $(".page").css("display", "block")
         $(".page").html(xhr.responseText)
