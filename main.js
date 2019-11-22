@@ -1,7 +1,18 @@
-
-if (!Event) var Event = require("./events.js")
+if (!Event) var Event;
 if (!eventArray) var eventArray = []
 $(document).ready(() => {
+  
+  if (sessionStorage.getItem("connected") === "true") {
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", "s3pta-api.glitch.me/event")
+    xhr.send()
+    
+    xhr.onreadystatechange = () => {
+      if (xhr.status === 200 && xhr.readyState === XMLHttpRequest.DONE) {
+        Event = JSON.parse(xhr.responseText).Event
+      }
+    }
+  }
 
   new Event({
       title: "Teste de C.I",
