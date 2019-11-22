@@ -451,8 +451,8 @@ td.nextmonth, td.lastmonth {
   align-self: center;
   justify-content: center;
   align-items: center;
-  width: 55%;
-  background: linear-gradient(-135deg, rgb(30, 30, 30), rgb(70, 70, 70));
+  width: 25%;
+  background: url("EEB2.png") no-repeat center;
   box-shadow: 0 0 10px rgba(0, 0, 0, .25);
   overflow: auto;
   padding: 30px;
