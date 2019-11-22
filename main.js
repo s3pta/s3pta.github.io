@@ -2,13 +2,6 @@
 
 if (!eventArray) var eventArray = []
 $(document).ready(() => {
-  if (sessionStorage.getItem("connected") === "true") {
-    $(".password").css("display", "none")
-    $(".page").css("display", "block")
-  } else {
-    $(".page").html("<div></div>")
-    eventArray = []
-  }
 
   new Event({
       title: "Teste de C.I",
@@ -29,6 +22,15 @@ $(document).ready(() => {
     month: "outubro",
     year: 2019
   })
+  
+  if (sessionStorage.getItem("connected") === "true") {
+    $(".password").css("display", "none")
+    $(".page").css("display", "block")
+  } else {
+    $(".page").html("<div></div>")
+    eventArray = []
+  }
+  
   $("td").each(function() {
     const td = $(this)
     eventArray.forEach(function (event) {
