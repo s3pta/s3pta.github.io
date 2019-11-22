@@ -36,3 +36,5 @@ class Event {
     console.log(eventArray)
   }
 }
+
+exports = Event
