@@ -36,7 +36,3 @@ class Event {
     console.log(eventArray)
   }
 }
-
-$(document).ready(() => {
-  module.exports = Event
-})
