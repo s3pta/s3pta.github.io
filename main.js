@@ -168,10 +168,10 @@ function check() {
   
   xhr.onreadystatechange = () => {
     if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-      if (!JSON.parse(req.responseText)) {
+      if (!JSON.parse(xhr.responseText)) {
         $(".password").css("display", "none")
         $(".page").css("display", "block")
-        $(".page").html(req.responseText)
+        $(".page").html(xhr.responseText)
         sessionStorage.setItem("connected", true)
       } else $("#wrong").text("Palavra passe errada.")
     }
