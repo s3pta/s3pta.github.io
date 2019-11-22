@@ -1,5 +1,6 @@
 class Event {
   constructor(details) {
+    if (sessionStorage.getItem("connected") !== "true") return;
     let id = Math.floor(Math.random() * 1000) + 1
     async function loopArray() {
       if (!eventArray || eventArray.length == 0) return;
