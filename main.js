@@ -5,6 +5,8 @@ $(document).ready(() => {
   if (sessionStorage.getItem("connected") === "true") {
     $(".password").css("display", "none")
     $(".page").css("display", "block")
+  } else {
+    $(".page").html("<div></div>")
   }
 
   new Event({
@@ -165,11 +167,14 @@ function check() {
   xhr.send()
   
   xhr.onreadystatechange = () => {
-    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200 && JSON.parse(xhr.responseText).correct) {
-      $(".password").css("display", "none")
-      $(".page").css("display", "block")
-      sessionStorage.setItem("connected", true)
-    } else $("#wrong").text("Palavra passe errada.")
+    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+      if (!JSON.parse(req.responseText)) {
+        $(".password").css("display", "none")
+        $(".page").css("display", "block")
+        $(".page").html(req.responseText)
+        sessionStorage.setItem("connected", true)
+      } else $("#wrong").text("Palavra passe errada.")
+    }
   }
 }
 
