@@ -74,7 +74,7 @@ $(document).ready(() => {
 
 
   $(".dark2").on("click", function() {
-    if (!$(".dark2").hasClass("open")) {
+    if ($(".dark2").hasClass("open")) {
       $("#sidenav").css("width", "0px")
       $("#sidenav a").css("display", "none")
       $(".dark2").removeClass("open")
