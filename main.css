@@ -173,6 +173,13 @@ body {
   }
 }
 
+@media only screen and (max-width: 1000px) and (min-width: 721px) {
+  .textos .column {
+    flex: 48%;
+    max-width: 48%;
+  }
+}
+
 @media only screen and (max-width: 720px) {
   
   .dark2 {
