@@ -452,16 +452,17 @@ td.nextmonth, td.lastmonth {
   border-radius: 10px;
   margin: 10px 0;
   display: flex;
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
-.textos a {
+.textos div {
   color: white;
   text-decoration: none;
   margin: 5px;
-  padding: 5px;
+  padding: 10px;
   border-radius: 5px;
-  transition: 250ms
+  font-size: 200%;
+  transition: 250ms;
 }
 
 .textos a:hover {
