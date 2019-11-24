@@ -73,9 +73,9 @@ $(document).ready(() => {
       $("#sidenav a").css("display", "block")
       $(".dark2").addClass("open")
       $(".topnav").addClass("scrolled2")
-      $("#navbutton .s1").css("transform", "translateY(7px) rotate(45deg) scale(1.2)")
+      $("#navbutton .s1").css("transform", "rotate(45deg) scale(1.2)")
       $("#navbutton .s2").css("display", "none")
-      $("#navbutton .s3").css("transform", "translateY(-7px) rotate(-45deg) scale(1.2)")
+      $("#navbutton .s3").css("transform", "translateY(-8px) rotate(-45deg) scale(1.2)")
     } else {
       $("#sidenav").css("width", "0px")
       $("#sidenav a").css("display", "none")
