@@ -446,16 +446,16 @@ td.nextmonth, td.lastmonth {
 
 .textos {
   width: 100%;
+  padding: 20px;
   background: linear-gradient(-135deg, rgb(30, 30, 30), rgb(70, 70, 70));
   border-radius: 10px;
+  text-align: center;
 }
 
 .textos * {
   color: white;
   text-decoration: none;
-  
 }
-
 
 .countdown {
   color: white;
