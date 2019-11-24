@@ -168,11 +168,6 @@ body {
 
 @media only screen and (max-width: 720px) {
   
-  .textos div {
-    flex-wrap: wrap !important;
-    justify-content: center !important;
-  }
-  
   .dark2 {
     position: fixed;
     width: 100%;
@@ -460,6 +455,7 @@ td.nextmonth, td.lastmonth {
   display: flex;
   box-shadow: 0 0 10px rgba(0, 0, 0, .25);
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .textos div a {
