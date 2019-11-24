@@ -19,20 +19,20 @@ $(document).ready(() => {
   new Event({
       title: "Teste de C.I",
       beginTime: "09:20",
-      day: 30,
+      day: 28,
       weekDay: "Thursday",
       description: "Neste dia teremos teste de Ciências Integradas. Para estudar, poderão usar as fichas que o respetivo professor vos entregou, as apresentação disponíveis no TEAMS, os apontamentos das aulas e o manual, da página 11 à 49. Bom estudo!",
-      month: "outubro",
+      month: "novembro",
       year: 2019
   })
 
   new Event({
     title: "Teste de Matemática",
     beginTime: "12:45",
-    day: 17,
+    day: 28,
     weekDay: "Thursday",
     description: "Neste dia iremos ter teste de Matemática. Toda a matéria necessária para estudar está na ficha que a professora deu com toda a matéria. Bom estudo!",
-    month: "outubro",
+    month: "novembro",
     year: 2019
   })
   
