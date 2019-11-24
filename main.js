@@ -22,11 +22,9 @@ $(document).ready(() => {
   })
   
   if (sessionStorage.getItem("connected") === "true") {
-    $(".password").css("display", "none")
     $(".page").css("display", "block")
   } else {
-    $(".page").html("<div></div>")
-    eventArray = []
+    window.location.replace("https://s3pta.github.io/auth")
   }
   
   $("td").each(function() {
@@ -157,27 +155,3 @@ function text(text, month, year) {
   }
   return returnArray
 }
-
-function check() {
-  const xhr = new XMLHttpRequest()
-  xhr.open("GET", "https://s3pta-api.glitch.me/check/" + $("#password").val() + "/" + (window.location.href.split("/").pop() || "index"))
-  xhr.send()
-  
-  xhr.onreadystatechange = () => {
-    if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-      console.log(xhr.getResponseHeader("Content-Type"))
-      if (xhr.getResponseHeader("Content-Type").includes("text/html")) {
-        $(".password").css("display", "none")
-        $(".page").css("display", "block")
-        $(".page").html(xhr.responseText)
-        sessionStorage.setItem("connected", true)
-        window.location.reload(true)
-      } else $("#wrong").text("Palavra passe errada.")
-    }
-  }
-}
-
-$(".password form").submit(function(e) {
-  e.preventDefault();
-  check()
-});
