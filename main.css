@@ -483,8 +483,8 @@ td.nextmonth, td.lastmonth {
 }
 
 .column div {
-  width: 100%;
-  padding: 10px;
+  width: 90%;
+  padding: 10px 5%;
   border-radius: 10px;
   transition: 250ms;
   background: url("EEB2.png") no-repeat center;
