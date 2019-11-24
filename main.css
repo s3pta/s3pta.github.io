@@ -445,31 +445,17 @@ td.nextmonth, td.lastmonth {
 }
 
 .textos {
-  display: inline-flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin: auto;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-  width: 15px;
-  height: 70px;
-  background: url("EEB2.png");
-  overflow: scroll;
-  padding: 30px;
-  color: white;
-  box-shadow: 10px 10px 20px #0000004d;
-  text-decoration: none;
-  scrolling: yes;
-  font-size: 70%;
-  min-width: 20cm;
-  margin: 0 auto;
-  padding: 20px;
-  border-radius: 20px;
+  width: 100%;
   background: linear-gradient(-135deg, rgb(30, 30, 30), rgb(70, 70, 70));
-  box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+  border-radius: 10px;
 }
+
+.textos * {
+  color: white;
+  text-decoration: none;
+  
 }
+
 
 .countdown {
   color: white;
