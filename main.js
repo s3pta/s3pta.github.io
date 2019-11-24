@@ -73,9 +73,10 @@ $(document).ready(() => {
       $("#sidenav a").css("display", "block")
       $(".dark2").addClass("open")
       $(".topnav").addClass("scrolled2")
-      $("#navbutton .s1").css("transform", "rotate(45deg) scale(1.2)")
+      $("#navbutton .s1").css("transform", "rotate(45deg) translateY(4px) scale(1.2)")
       $("#navbutton .s2").css("display", "none")
-      $("#navbutton .s3").css("transform", "translateY(-8px) rotate(-45deg) scale(1.2)")
+      $("#navbutton .stripes").css("box-shadow", "none")
+      $("#navbutton .s3").css("transform", "translateY(-4px) rotate(-45deg) scale(1.2)")
     } else {
       $("#sidenav").css("width", "0px")
       $("#sidenav a").css("display", "none")
@@ -84,6 +85,7 @@ $(document).ready(() => {
       $("#navbutton .s1").css("transform", "rotate(0) scale(1)")
       $("#navbutton .s2").css("display", "block")
       $("#navbutton .s3").css("transform", "rotate(0) scale(1) translateY(0)")
+      $("#navbutton .stripes").css("box-shadow", "0 0 5px rgba(0, 0, 0, .5)")
     }
   })
 
@@ -97,6 +99,7 @@ $(document).ready(() => {
       $("#navbutton .s1").css("transform", "rotate(0) scale(1)")
       $("#navbutton .s1").css("display", "block")
       $("#navbutton .s3").css("transform", "rotate(0) scale(1) translateY(0)")
+      $("#navbutton .stripes").css("box-shadow", "0 0 5px rgba(0, 0, 0, .5)")
     }
   })
 
