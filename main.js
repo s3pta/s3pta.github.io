@@ -38,12 +38,6 @@ $(document).ready(() => {
     }
   }
   
-  if (sessionStorage.getItem("connected") === key) {
-    $(".page").css("display", "block")
-  } else {
-    window.location.replace("https://s3pta.github.io/auth")
-  }
-  
   $("td").each(function() {
     const td = $(this)
     eventArray.forEach(function (event) {
