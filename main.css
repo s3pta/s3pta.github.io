@@ -452,7 +452,7 @@ td.nextmonth, td.lastmonth {
   align-self: center;
   justify-content: center;
   align-items: center;
-  width: 5px;
+  width: 15px;
   height: 70px;
   background: url("EEB2.png");
   box-shadow: 0 0 10px rgba(0, 0, 0, .25);
@@ -463,6 +463,7 @@ td.nextmonth, td.lastmonth {
   box-shadow: 10px 10px 20px #0000004d;
   text-decoration: none;
   scrolling: yes;
+  box-border: 10px;
 }
 
 .countdown {
