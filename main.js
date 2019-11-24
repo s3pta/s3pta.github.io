@@ -21,7 +21,24 @@ $(document).ready(() => {
     year: 2019
   })
   
-  if (sessionStorage.getItem("connected") === "true") {
+  let key;
+  
+  const xhr = new XMLHttpRequest()
+  xhr.open("GET", "https://s3pta-api.glitch.me/check/" + sessionStorage.getItem("connected"))
+  xhr.send()
+  
+  xhr.onreadystatechange = () => {
+    if (xhr.readyState = XMLHttpRequest.DONE && xhr.status === 200) {
+      const json = JSON.parse(xhr.responseText)
+      if (json.connected === true) {
+        $(".page").css("display", "block")
+      } else {
+        window.location.replace("https://s3pta.github.io/auth")
+      }
+    }
+  }
+  
+  if (sessionStorage.getItem("connected") === key) {
     $(".page").css("display", "block")
   } else {
     window.location.replace("https://s3pta.github.io/auth")
