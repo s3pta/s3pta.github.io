@@ -445,8 +445,8 @@ td.nextmonth, td.lastmonth {
 }
 
 .textos {
-  width: 100%;
-  padding: 20px;
+  width: 80%;
+  padding: 10%;
   background: linear-gradient(-135deg, rgb(30, 30, 30), rgb(70, 70, 70));
   border-radius: 10px;
   text-align: center;
