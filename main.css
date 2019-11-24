@@ -455,6 +455,10 @@ td.nextmonth, td.lastmonth {
   flex-wrap: wrap;
 }
 
+.textos * {
+  color: white;
+}
+
 .textos a {
   color: white;
   text-decoration: none;
