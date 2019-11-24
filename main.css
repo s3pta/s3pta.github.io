@@ -169,8 +169,8 @@ body {
 @media only screen and (max-width: 720px) {
   
   .textos div {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
   }
   
   .dark2 {
