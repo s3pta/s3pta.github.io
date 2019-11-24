@@ -97,7 +97,7 @@ $(document).ready(() => {
       $(".dark2").removeClass("open")
       $(".topnav").removeClass("scrolled2")
       $("#navbutton .s1").css("transform", "rotate(0) scale(1)")
-      $("#navbutton .s1").css("display", "block")
+      $("#navbutton .s2").css("display", "block")
       $("#navbutton .s3").css("transform", "rotate(0) scale(1) translateY(0)")
       $("#navbutton .stripe").css("box-shadow", "0 0 5px rgba(0, 0, 0, .5)")
     }
