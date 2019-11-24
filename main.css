@@ -461,7 +461,7 @@ td.nextmonth, td.lastmonth {
   margin: 5px;
   padding: 10px;
   border-radius: 5px;
-  font-size: 200%;
+  font-size: 150%;
   transition: 250ms;
 }
 
