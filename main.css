@@ -166,7 +166,19 @@ body {
   
 }
 
+@media only screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
 @media only screen and (max-width: 720px) {
+  
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
   
   .dark2 {
     position: fixed;
@@ -452,13 +464,17 @@ td.nextmonth, td.lastmonth {
   background: linear-gradient(-135deg, rgb(30, 30, 30), rgb(70, 70, 70));
   border-radius: 20px;
   margin: 10px 0;
-  display: flex;
   box-shadow: 0 0 10px rgba(0, 0, 0, .25);
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: flex;
 }
 
-.textos div a {
+.column {
+  flex: 25%;
+  max-width: 25%;
+  margin: 4px;
+}
+
+.column div a {
   color: black;
   text-decoration: none;
   text-shadow: 0 0 10px rgba(0, 0, 0, .5);
@@ -466,8 +482,8 @@ td.nextmonth, td.lastmonth {
   z-index: 1;
 }
 
-.textos div {
-  margin: 5px;
+.column div {
+  width: 100%;
   padding: 10px;
   border-radius: 10px;
   transition: 250ms;
@@ -479,7 +495,7 @@ td.nextmonth, td.lastmonth {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, .5);
 }
 
-.textos div::before {
+.column div::before {
   position: absolute;
   content: "";
   top: 0;
@@ -492,7 +508,7 @@ td.nextmonth, td.lastmonth {
   border-radius: 10px
 }
 
-.textos div:hover::before {
+.column div:hover::before {
   background: rgba(255, 255, 255, .5);
 }
 
