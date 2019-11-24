@@ -33,7 +33,8 @@ $(document).ready(() => {
       if (json.connected === true) {
         $(".page").css("display", "block")
       } else {
-        window.location.replace("https://s3pta.github.io/auth")
+        console.log(false)
+        //window.location.replace("https://s3pta.github.io/auth")
       }
     }
   }
