@@ -17,7 +17,7 @@ $(document).ready(() => {
   }
   
   new Event({
-      title: "Teste de C.I",
+      title: "Teste de Ciências Integradas",
       beginTime: "09:20",
       day: 28,
       weekDay: "Thursday",
