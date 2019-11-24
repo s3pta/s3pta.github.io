@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>S3PTA | Autorizar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="./main.css" rel="stylesheet">
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+  </head>
+  <body>
+    <div class="password">
+      <form id="password-form">
+        <h1>S3PTA</h1>
+        <div id="wrong"></div>
+        <input id="password" type="password" placeholder="Palavra Passe"></input>
+        <button onclick="check()">Validar</button>
+      </form>
+    </div>
+  <script>
+    function check() {
+      const xhr = new XMLHttpRequest()
+      xhr.open("GET", "https://s3pta-api.glitch.me/check/" + $("#password").val()))
+      xhr.send()
 
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+          const json = JSON.parse(xhr.responseText)
+          if (json.connected === true) {
+            sessionStorage.setItem("connected", true)
+            window.location.replace("https://s3pta.github.io/index")
+          } else $("#wrong").text("Palavra passe errada.")
+        }
+      }
+    }
+
+    $(".password form").submit(function(e) {
+      e.preventDefault();
+      check()
+    });
+  </script>
+  </body>
+</html>
