@@ -29,8 +29,8 @@ $(document).ready(() => {
   
   xhr.onreadystatechange = () => {
     if (xhr.readyState = XMLHttpRequest.DONE && xhr.status === 200) {
-      const json = JSON.parse(xhr.responseText)
-      if (json.connected === true) {
+      const jsonResponse = JSON.parse(xhr.responseText)
+      if (jsonResponse.connected === true) {
         $(".page").css("display", "block")
       } else {
         console.log(false)
