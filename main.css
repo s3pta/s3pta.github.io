@@ -466,6 +466,7 @@ td.nextmonth, td.lastmonth {
   margin: 10px 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, .25);
   display: flex;
+  flex-wrap: wrap;
 }
 
 .column {
