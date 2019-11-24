@@ -27,7 +27,8 @@
         if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
           const json = JSON.parse(xhr.responseText)
           if (json.connected === true) {
-            sessionStorage.setItem("connected", true)
+            
+            sessionStorage.setItem("connected", $("#password").val())
             window.location.replace("https://s3pta.github.io/index")
           } else $("#wrong").text("Palavra passe errada.")
         }
