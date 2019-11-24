@@ -466,6 +466,7 @@ td.nextmonth, td.lastmonth {
   color: white;
   box-shadow: 10px 10px 20px #0000004d;
   text-decoration: none;
+  scrolling: yes;
 }
 
 .countdown {
