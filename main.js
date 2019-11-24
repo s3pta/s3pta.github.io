@@ -1,6 +1,21 @@
 if (!eventArray) var eventArray = []
 $(document).ready(() => {
-
+  
+  const xhr = new XMLHttpRequest()
+  xhr.open("GET", "https://s3pta-api.glitch.me/check/" + sessionStorage.getItem("connected"))
+  xhr.send()
+  
+  xhr.onreadystatechange = () => {
+    if (xhr.readyState = XMLHttpRequest.DONE && xhr.status === 200) {
+      const jsonResponse = JSON.parse(xhr.responseText)
+      if (jsonResponse.connected === true) {
+        $(".page").css("display", "block")
+      } else {
+        window.location.replace("https://s3pta.github.io/auth")
+      }
+    }
+  }
+  
   new Event({
       title: "Teste de C.I",
       beginTime: "09:20",
@@ -20,23 +35,6 @@ $(document).ready(() => {
     month: "outubro",
     year: 2019
   })
-  
-  let key;
-  
-  const xhr = new XMLHttpRequest()
-  xhr.open("GET", "https://s3pta-api.glitch.me/check/" + sessionStorage.getItem("connected"))
-  xhr.send()
-  
-  xhr.onreadystatechange = () => {
-    if (xhr.readyState = XMLHttpRequest.DONE && xhr.status === 200) {
-      const jsonResponse = JSON.parse(xhr.responseText)
-      if (jsonResponse.connected === true) {
-        $(".page").css("display", "block")
-      } else {
-        window.location.replace("https://s3pta.github.io/auth")
-      }
-    }
-  }
   
   $("td").each(function() {
     const td = $(this)
