@@ -534,23 +534,24 @@ td.nextmonth, td.lastmonth {
 }
 */
 .modal {
-  display: none; 
-  position: fixed; 
-  z-index: 1; 
+  display: none;
+  position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
-  width: 100%; 
-  height: 100%; 
-  overflow: auto; 
-  background: url("EEB2.png");
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  /* background: url("EEB2.png"); */
   padding-top: 60px;
 }
 
 .modal-content {
   background-color: #fefefe;
-  margin: 5px auto; 
+  margin: 5px auto;
   border: 1px solid #888;
-  width: 100%; 
+  width: 100%;
+  height: 100vh;
 }
 
 .close {
@@ -621,10 +622,14 @@ button:hover {
 
  .imgcontainer {
   text-align: center;
-  margin: 24px 0 12px 0;
+  /* margin: 24px 0 12px 0; */
+  /* position: relative; */
+  /* top: 47px; */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, .25);
+  height: 40vh;
 }
 .container {
-  padding: 16px;
+  /* padding: 16px; */
 }
 
 span.psw {
@@ -696,3 +701,20 @@ input, button {
 }
 
        
+.login-container {
+    padding: 16px;
+    margin: 0 20vw;
+    /* position: relative; */
+    /* top: 47px; */
+}
+
+.imgcontainer img {
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.topnav.scrolled3 {
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
