@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html><head>
   <title>S3PTA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="./main.css" rel="stylesheet">
-    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
-  <body>
-    <div class="page" style="display:none">
+  <body style="overflow: auto;">
+    <div class="page" style="display: block;">
         <div class="dark"></div>
         <div class="dark2"></div>
-        <div class="topnav">
+        <div class="topnav scrolled">
             <div id="navbutton">
                 <span id="stripes">
-                    <span class="stripe s1"></span>
-                    <span class="stripe s2"></span>
-                    <span class="stripe s3"></span>
+                    <span class="stripe s1" style="transform: rotate(0deg) scale(1); box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;"></span>
+                    <span class="stripe s2" style="display: block; box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;"></span>
+                    <span class="stripe s3" style="transform: rotate(0deg) scale(1) translateY(0px); box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;"></span>
                 </span>
             </div>
             <h3>S3PTA</h3>
@@ -25,17 +24,17 @@
             <a href="./textos">Textos</a>
             <a href="./datas">Datas</a>
         </div>
-        <div id="sidenav">
+        <div id="sidenav" style="width: 0px;">
             <h2>Menu</h2>
-            <a class="active" href="./index">Início</a>
-            <a href="./textos">Textos</a>
-            <a href="./datas">Datas</a>
+            <a class="active" href="./index" style="display: none;">Início</a>
+            <a href="./textos" style="display: none;">Textos</a>
+            <a href="./datas" style="display: none;">Datas</a>
         </div>
       <div class="Banner">
-        <div style = "height: 100vh;" class="BannerPicture"></div>
+        <div style="height: 100vh; transform: translate(0px, 561.709px);" class="BannerPicture"></div>
         <div class="Title">
-          <h1>S3PTA</h1>
-          <h2>Viva S3PTA!</h2>
+          <h1 style="transform: translate(0px, 365.111px);">S3PTA</h1>
+          <h2 style="transform: translate(0px, 365.111px);">Viva S3PTA!</h2>
         </div>
       </div>
       <div class="shadow">
@@ -50,25 +49,24 @@
               <p>s1pta.eebdois@gmail.com</p>
             </div>
             <div class="countdown">
-              <p id="demo"></p>
+              <p id="demo">29d 4h 44m 0s </p>
               <h4>Dia de Natal</h4>
             </div>
             <div class="login">
               <button class="loginbtn" onclick="document.getElementById('id01').style.display='block'; $('.topnav').addClass('scrolled3'); $('body').css('overflow', 'hidden')">Login</button>
-              <div id="id01" class="modal">
-                <span onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); $('body').css('overflow', 'auto')" class="close" title="Close Modal">&times;</span>
+              <div id="id01" class="modal" style="display: none;">
+                <span onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); $('body').css('overflow', 'auto')" class="close" title="Close Modal">×</span>
 
                 <form class="modal-content animate" action="/action_page.php">
-                  <div class="imgcontainer">
-                    <img src="EEB2.png" alt="S3PTA">
-                  </div>
-
-                  <div class="container">
+                  
+<div class="form-container">
+    
+                  <div class="login-container"><h2>Login</h2></div><div class="login-container">
                     <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required>
+                    <input type="text" placeholder="Enter Username" name="uname" required="">
 
                     <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required="">
 
                     <button type="submit">Login <a href="./textos"></a></button>
                     <label>
@@ -76,11 +74,11 @@
                     </label>
                   </div>
 
-                  <div class="container" style="background-color:#f1f1f1">
+                  <div class="login-container" style="background-color:#f1f1f1">
                     <button type="button" onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); $('body').css('overflow', 'auto')" class="cancelbtn">Cancel</button>
                     <span class="psw">Forgot <a href="./datas">password?</a></span>
                   </div>
-                </form>
+    </div></form>
               </div>
             </div>
           </div>
@@ -174,5 +172,6 @@ var x = setInterval(function() {
     }
     </script>
     <script src="./main.js"></script>
-  </body>
-</html>
+  
+
+</div></body></html>
