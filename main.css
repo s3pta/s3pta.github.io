@@ -764,4 +764,5 @@ form.modal-content::before {
     border-radius: 20px;
     background: rgba(255, 255, 255, .5);
     overflow-y: auto;
+    max-height: 90vh;
 }
