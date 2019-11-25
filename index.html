@@ -82,10 +82,9 @@ var x = setInterval(function() {
     <div class="viewcounter">
     </div>
     <div class="login">
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+<button onclick="document.getElementById('id01').style.display='block'; $('.topnav').addClass('scrolled3'); $('body').css('overflow', 'hidden')">Login</button>
 <div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'"
-class="close" title="Close Modal">&times;</span>
+  <span onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); $('body').css('overflow', 'auto')" class="close" title="Close Modal">&times;</span>
 
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
@@ -106,7 +105,7 @@ class="close" title="Close Modal">&times;</span>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); $('body').css('overflow', 'auto')" class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="./datas">password?</a></span>
     </div>
   </form>
