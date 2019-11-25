@@ -748,7 +748,6 @@ form.modal-content::before {
     background: url("EEB2.png") no-repeat center;
     z-index: -1;
     background-size: cover;
-    filter: blur(5px);
     background-color: white;
 }
 
