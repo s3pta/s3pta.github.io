@@ -82,7 +82,7 @@ body {
 }
 
 .dark2 {
-  z-index: 1 !important;
+  z-index: 50 !important;
 }
 
 .dark.open, .dark2.open {
@@ -277,7 +277,7 @@ body {
     overflow: hidden;
     overflow-wrap: normal !important;
     word-wrap: normal !important;
-    z-index: 100;
+    z-index: 150;
     color: white;
     text-align: right;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .25);
@@ -494,7 +494,6 @@ td.nextmonth, td.lastmonth {
   background-size: cover;
   background-color: white;
   position: relative;
-  z-index: 1;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, .5);
 }
 
