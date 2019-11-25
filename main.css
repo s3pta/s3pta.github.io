@@ -182,7 +182,7 @@ body {
 
 @media only screen and (max-width: 720px) {
   
-  .login-container {
+  .form-container {
     width: 90% !important;
   }
   
