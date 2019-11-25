@@ -111,7 +111,7 @@ body {
     height: 47px;
     font-size: 2rem;
     text-align: center;
-    z-index: 199;
+    z-index: 150;
     transition: background-color 0.25s;
     overflow: hidden;
   }
@@ -216,7 +216,7 @@ body {
     height: 47px;
     font-size: 2rem;
     text-align: center;
-    z-index: 199;
+    z-index: 150;
     transition: background-color 0.25s;
     overflow: hidden;
   }
