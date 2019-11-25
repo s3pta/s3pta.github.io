@@ -696,7 +696,8 @@ span.psw {
 }
 
 input, button {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, .25)
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, .25);
+  outline: none;
 }
 
 #wrong {
@@ -707,7 +708,7 @@ input, button {
        
 .login-container {
     padding: 16px;
-    margin: 0 20vw;
+    /* margin: 0 20vw; */
     /* position: relative; */
     /* top: 47px; */
 }
@@ -734,4 +735,28 @@ input[type=text]:hover, input[type=password]:hover {
 
 input[type=text]:focus, input[type=password]:focus {
     transform: scale(1.1);
+}
+
+form.modal-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("EEB2.png") no-repeat center;
+    z-index: -1;
+    background-size: cover;
+    filter: blur(5px);
+    background-color: white;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .5);
 }
