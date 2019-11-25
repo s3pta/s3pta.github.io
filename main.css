@@ -606,10 +606,12 @@ button {
   border: none;
   cursor: pointer;
   width: 35%;
+  transition: 250ms;
 }
 
 button:hover {
-  opacity: 0.8;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  transform: scale(1.1);
 }
 
 .cancelbtn {
