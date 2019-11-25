@@ -53,13 +53,13 @@
               <h4>Dia de Natal</h4>
             </div>
             <div class="login">
-              <button class="loginbtn" onclick="document.getElementById('id01').style.display='block'; $('.topnav').addClass('scrolled3'); $('body').css('overflow', 'hidden')">Login</button>
+              <button class="loginbtn" onclick="document.getElementById('id01').style.display='block'; $('.topnav').addClass('scrolled3'); ">Login</button>
               <div id="id01" class="modal" style="display: block;">
-                <span onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); $('body').css('overflow', 'auto')" class="close" title="Fechar">×</span>
+                <span onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3');" class="close" title="Fechar">×</span>
 
                 <form class="modal-content animate">
                   
-<div class="form-container">
+                  <div class="form-container">
     
                   <div class="login-container"><h2>Login</h2></div><div class="login-container">
                     <label for="uname"><b>Nome de Utilizador</b></label>
@@ -73,8 +73,9 @@
                       <input type="checkbox" checked="checked" name="remember">Lembrar-me</label>
                   </div>
 
-                  <span class="psw" style="background: #f1f1f1;padding: 10px;border-radius: 10px;"><button type="button" onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); $('body').css('overflow', 'auto')" class="cancelbtn">Cancelar</button> Esqueceste-te da <a href="./datas">palavra-passe?</a></span>
-    </div></form>
+                  <span class="psw" style="background: #f1f1f1;padding: 10px;border-radius: 10px;"><button type="button" onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); " class="cancelbtn">Cancelar</button> Esqueceste-te da <a href="./datas">palavra-passe?</a></span>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
