@@ -759,10 +759,10 @@ form.modal-content::before {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     padding: 20px;
     border-radius: 20px;
     background: rgba(255, 255, 255, .5);
     overflow-y: auto;
-    max-height: 90vh;
+    max-height: 70vh;
 }
