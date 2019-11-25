@@ -7,11 +7,11 @@
     <link href="./main.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
-  <body style="overflow: auto;">
+  <body style="overflow: hidden;">
     <div class="page" style="display: block;">
         <div class="dark"></div>
         <div class="dark2"></div>
-        <div class="topnav scrolled">
+        <div class="topnav scrolled scrolled3">
             <div id="navbutton">
                 <span id="stripes">
                     <span class="stripe s1" style="transform: rotate(0deg) scale(1); box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;"></span>
@@ -31,10 +31,10 @@
             <a href="./datas" style="display: none;">Datas</a>
         </div>
       <div class="Banner">
-        <div style="height: 100vh; transform: translate(0px, 561.709px);" class="BannerPicture"></div>
+        <div style="height: 100vh; transform: translate(0px, 415.385px);" class="BannerPicture"></div>
         <div class="Title">
-          <h1 style="transform: translate(0px, 365.111px);">S3PTA</h1>
-          <h2 style="transform: translate(0px, 365.111px);">Viva S3PTA!</h2>
+          <h1 style="transform: translate(0px, 270px);">S3PTA</h1>
+          <h2 style="transform: translate(0px, 270px);">Viva S3PTA!</h2>
         </div>
       </div>
       <div class="shadow">
@@ -49,35 +49,31 @@
               <p>s1pta.eebdois@gmail.com</p>
             </div>
             <div class="countdown">
-              <p id="demo">29d 4h 44m 0s </p>
+              <p id="demo">29d 3h 7m 17s </p>
               <h4>Dia de Natal</h4>
             </div>
             <div class="login">
               <button class="loginbtn" onclick="document.getElementById('id01').style.display='block'; $('.topnav').addClass('scrolled3'); $('body').css('overflow', 'hidden')">Login</button>
-              <div id="id01" class="modal" style="display: none;">
-                <span onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); $('body').css('overflow', 'auto')" class="close" title="Close Modal">×</span>
+              <div id="id01" class="modal" style="display: block;">
+                <span onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); $('body').css('overflow', 'auto')" class="close" title="Fechar">×</span>
 
-                <form class="modal-content animate" action="/action_page.php">
+                <form class="modal-content animate">
                   
 <div class="form-container">
     
                   <div class="login-container"><h2>Login</h2></div><div class="login-container">
-                    <label for="uname"><b>Username</b></label>
-                    <input type="text" placeholder="Enter Username" name="uname" required="">
+                    <label for="uname"><b>Nome de Utilizador</b></label>
+                    <input type="text" placeholder="Insere o nome de utilizador" name="uname" required="">
 
-                    <label for="psw"><b>Password</b></label>
-                    <input type="password" placeholder="Enter Password" name="psw" required="">
+                    <label for="psw"><b>Palavra-Passe</b></label>
+                    <input type="password" placeholder="Insere a palavra-passe" name="psw" required="">
 
-                    <button type="submit">Login <a href="./textos"></a></button>
+                    <button type="submit">Entrar</button>
                     <label>
-                      <input type="checkbox" checked="checked" name="remember"> Remember me
-                    </label>
+                      <input type="checkbox" checked="checked" name="remember">Lembrar-me</label>
                   </div>
 
-                  <div class="login-container" style="background-color:#f1f1f1">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); $('body').css('overflow', 'auto')" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="./datas">password?</a></span>
-                  </div>
+                  <span class="psw" style="background: #f1f1f1;padding: 10px;border-radius: 10px;"><button type="button" onclick="document.getElementById('id01').style.display='none'; $('.topnav').removeClass('scrolled3'); $('body').css('overflow', 'auto')" class="cancelbtn">Cancelar</button> Esqueceste-te da <a href="./datas">palavra-passe?</a></span>
     </div></form>
               </div>
             </div>
@@ -174,4 +170,5 @@ var x = setInterval(function() {
     <script src="./main.js"></script>
   
 
-</div></body></html>
+</div>
+</body></html>
