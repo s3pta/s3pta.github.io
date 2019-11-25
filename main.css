@@ -432,27 +432,25 @@ aside {
 }
 
 .popup {
-  width: 0;
-  height: 0;
+  width: 70vw;
+  height: 70vh;
   background: linear-gradient(-135deg, rgb(30, 30, 30), rgb(70, 70, 70));
   position: fixed;
   z-index: 100;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
   border-radius: 20px;
   transition: 0.5s;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, .25);
   color: white;
+  padding: 20px
 }
 
 .popup.open {
-  width: 70vw;
-  height: 70vh;
-  padding: 20px;
+  transform: translate(-50%, -50%);
 }
 
 td.nextmonth, td.lastmonth {
