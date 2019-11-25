@@ -182,10 +182,6 @@ body {
 
 @media only screen and (max-width: 720px) {
   
-  .login-container {
-    width: 90%;
-  }
-  
   .dark2 {
     position: fixed;
     width: 100%;
