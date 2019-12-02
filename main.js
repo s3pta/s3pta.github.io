@@ -116,9 +116,10 @@ $(document).ready(() => {
           popup.append(`<p class="${event.eventId}">${event.description}</p>`)
         })
       } else popup.append("<p>Não há eventos registados para este dia.</p>")
-      if ($(this).hasClass("nextmonth")) popup.prepend(`<h1>${$(this).text()} de ${$("nextmonth").attr("id").toLowerCase()}</h1>`)
-      else if ($(this).hasClass("lastmonth")) popup.prepend(`<h1>${$(this).text()} de ${$("lastmonth").attr("id").toLowerCase()}</h1>`)
-      else popup.prepend(`<h1>${$(this).text()} de ${$("#month").text().toLowerCase()}</h1>`)
+      const year = $(this).hasClass("nextyear") ? $("nextyear").attr("id") : $(this).hasClass("lastyear") ? $("lastyear").attr("id") : $("#year").text() 
+      if ($(this).hasClass("nextmonth")) popup.prepend(`<h1>${$(this).text()} de ${$("nextmonth").attr("id").toLowerCase()} de ${year}</h1>`)
+      else if ($(this).hasClass("lastmonth")) popup.prepend(`<h1>${$(this).text()} de ${$("lastmonth").attr("id").toLowerCase()} de ${year}</h1>`)
+      else popup.prepend(`<h1>${$(this).text()} de ${$("#month").text().toLowerCase()} de ${year}</h1>`)
     }
     $(".dark").on("click", () => {
       const popup = $(".popup")
