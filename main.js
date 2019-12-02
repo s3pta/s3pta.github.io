@@ -17,29 +17,29 @@ $(document).ready(() => {
   }
   
   new Event({
-      title: "Teste de Ciências Integradas",
-      beginTime: "09:20",
-      day: 28,
-      weekDay: "Thursday",
-      description: "Neste dia teremos teste de Ciências Integradas. Bom estudo!",
-      month: "novembro",
+      title: "Dia de Natal",
+      allDay: true,
+      day: 25,
+      weekDay: "Friday",
+      description: "Dia de Natal. Boas Festas!",
+      month: "dezembro",
       year: 2019
   })
-
+  
   new Event({
-    title: "Teste de Matemática",
-    beginTime: "12:45",
-    day: 28,
-    weekDay: "Thursday",
-    description: "Neste dia iremos ter teste de Matemática. Toda a matéria necessária para estudar está na ficha que a professora deu com toda a matéria. Bom estudo!",
-    month: "novembro",
-    year: 2019
+      title: "Ano Novo",
+      allDay: true,
+      day: 01,
+      weekDay: "Wednesday",
+      description: "Feliz Ano Novo!",
+      month: "janeiro",
+      year: 2020
   })
   
   $("td").each(function() {
     const td = $(this)
     eventArray.forEach(function (event) {
-      if (event.day == td.text() && (td.hasClass("lastmonth") ? event.month === $("lastmonth").attr("id") : td.hasClass("nextmonth") ? event.month === $("nextmonth").attr("id") : event.month === $("#month").text().toLowerCase()) && event.year == $("#year").text()) {
+      if (event.day == td.text() && (td.hasClass("lastmonth") ? event.month === $("lastmonth").attr("id") : td.hasClass("nextmonth") ? event.month === $("nextmonth").attr("id") : event.month === $("#month").text().toLowerCase()) && (td.hasClass("nextyear") ? event.year == $("nextyear").attr("id") : td.hasClass("lastyear") ? event.year == $("lastyear").attr("id") : event.year == $("#year").text())) {
         td.addClass("red")
       }
     })
@@ -108,7 +108,7 @@ $(document).ready(() => {
       popup.addClass("open")
       $(".dark").addClass("open")
       popup.empty()
-      const event = text($(this).text(), $(this).hasClass("lastmonth") ? $("lastmonth").attr("id") : ($(this).hasClass("nextmonth") ? $("nextmonth").attr("id") : $("#month").text().toLowerCase()), $("#year").text())
+      const event = text($(this).text(), $(this).hasClass("lastmonth") ? $("lastmonth").attr("id") : ($(this).hasClass("nextmonth") ? $("nextmonth").attr("id") : $("#month").text().toLowerCase()), ($(this).hasClass("nextyear") ? $("nextyear").attr("id") : $(this).hasClass("lastyear") ? $("lastyear").attr("id") : $("#year").text()))
       if (event[0]) {
         event.forEach(event => {
           popup.append(`<h2 class="${event.eventId}">${event.title}</h2>`)
