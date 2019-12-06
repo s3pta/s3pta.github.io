@@ -775,3 +775,12 @@ form.modal-content::before {
     overflow-y: auto;
     max-height: 90vh;
 }
+
+.fotos {
+  color: white;
+  border-radius: 20px;
+  background: linear-gradient(-135deg, rgb(30, 30, 30), rgb(70, 70, 70));
+  padding: 15px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+  margin-top: 10px;
+}
