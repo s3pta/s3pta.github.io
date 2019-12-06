@@ -1,68 +1,70 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>S3PTA</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <link href="../main.css" rel="stylesheet">
-        <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
-    </head>
-    <body>
-        <div class="dark"></div>
-        <div class="dark2"></div>
-        <div class="topnav">
-            <div id="navbutton">
-                <span id="stripes">
+
+<head>
+    <title>S3PTA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="../main.css" rel="stylesheet">
+    <link rel='icon' href='favicon.ico' type='image/x-icon' />
+</head>
+
+<body>
+    <div class="dark"></div>
+    <div class="dark2"></div>
+    <div class="topnav">
+        <div id="navbutton">
+            <span id="stripes">
                     <span class="stripe"></span>
-                    <span class="stripe"></span>
-                    <span class="stripe"></span>
-                </span>
+            <span class="stripe"></span>
+            <span class="stripe"></span>
+            </span>
+        </div>
+        <h3>S3PTA</h3>
+        <a href="../index">Início</a>
+        <a href="../textos">Textos</a>
+        <a href="../datas">Datas</a>
+        <a href="../interclasses">Interclasses</a>
+    </div>
+    <div id="sidenav">
+        <h2>Menu</h2>
+        <a href="../index">Início</a>
+        <a href="../textos">Textos</a>
+        <a href="../datas">Datas</a>
+        <a href="../interclasses">Interclasses</a>
+    </div>
+    <div class="Banner">
+        <div class="BannerPicture"></div>
+        <div class="Title">
+            <h1>S3PTA</h1>
+            <h2>Teste</h2>
+        </div>
+    </div>
+    <div class="shadow">
+        <div class="container">
+            <div class="main">
+                <br>
+                <p>Aqui estão algumas fotos tiradas durante o jogo do dia 04/12. Espero que gostem!</p>
+                <script>
+                    var countDownDate = new Date("Feb 19, 2020 17:45:00").getTime();
+                    var x = setInterval(function() {
+                        var now = new Date().getTime();
+                        var distance = countDownDate - now;
+                        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                        document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+                        if (distance < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "EXPIRED";
+                        }
+                    }, 1000);
+                </script>
             </div>
-            <h3>S3PTA</h3>
-            <a href="../index">Início</a>
-            <a href="../textos">Textos</a>
-            <a href="../datas">Datas</a>
-            <a href="../interclasses">Interclasses</a>
         </div>
-        <div id="sidenav">
-            <h2>Menu</h2>
-            <a href="../index">Início</a>
-            <a href="../textos">Textos</a>
-            <a href="../datas">Datas</a>
-            <a href="../interclasses">Interclasses</a>
-        </div>
-        <div class="Banner">
-            <div class="BannerPicture"></div>
-            <div class="Title">
-                <h1>S3PTA</h1>
-                <h2>Teste</h2>
-            </div>
-        </div>
-        <div class="shadow">
-            <div class="container">
-                <div class="main">
-                    <br>
-                    <p>Aqui estão algumas fotos tiradas durante o jogo do dia 04/12. Espero que gostem!</p> 
-                    <script>
-var countDownDate = new Date("Feb 19, 2020 17:45:00").getTime();
-var x = setInterval(function() {
-  var now = new Date().getTime();
-  var distance = countDownDate - now;
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-          </div>
-          </div>
-          </div>
-          </body>
-          </html>
-         
+    </div>
+    <img src="WhatsApp Image 2019-12-04 at 20.30.31.jpeg">
+</body>
+</html>
