@@ -336,6 +336,11 @@ h2 {
   position: relative;
 }
 
+.BannerPicture.scrolled {
+  filter: blur(3px);
+  transform: scale(1.1);
+}
+
 .Banner {
   position: relative;
   overflow: hidden;
