@@ -49,6 +49,7 @@ $(document).ready(() => {
   $(window).on('scroll', () => {
     const scrollTop = $(this).scrollTop()
     const scrollLeft = $(this).scrollLeft()
+    $('.BannerPicture').addClass("scrolled")
     $('.BannerPicture').css({
       'transform': `translate(${scrollLeft / 1.3}px, ${scrollTop / 1.3}px)`
     })
