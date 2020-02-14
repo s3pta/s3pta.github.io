@@ -793,7 +793,7 @@ form.modal-content::before {
   flex-wrap: wrap;
 }
 
-* {box-sizing:border-box}
+//* {box-sizing:border-box}
 
 .slideshow-container {
   max-width: 1000px;
