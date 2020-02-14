@@ -793,7 +793,7 @@ form.modal-content::before {
   flex-wrap: wrap;
 }
 
-//* {box-sizing:border-box}
+/* {box-sizing:border-box}
 
 .slideshow-container {
   max-width: 1000px;
@@ -877,4 +877,4 @@ form.modal-content::before {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
+}*/
